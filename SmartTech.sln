@@ -1,0 +1,13 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartTech", "SmartTech\SmartTech.csproj", "{E82B2050-6432-4B65-AF70-55ED909095CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		default|Any CPU = default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E82B2050-6432-4B65-AF70-55ED909095CE}.default|Any CPU.ActiveCfg = default|Any CPU
+		{E82B2050-6432-4B65-AF70-55ED909095CE}.default|Any CPU.Build.0 = default|Any CPU
+	EndGlobalSection
+EndGlobal
