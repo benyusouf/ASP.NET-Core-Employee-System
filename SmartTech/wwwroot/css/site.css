@@ -1,37 +1,50 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.container {
+    max-width: 960px;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+/*
+ * Custom translucent site header
+ */
+/* NAVBAR*/
+.header {
+    max-height: 40px;
+    padding-top: 0px; !important;
+    background-color: rgba(0, 0, 0, .85) !important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    font-size: small;
+    
+}
+.header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+.header a:hover {
+    color: #fff;
+    text-decoration: none;
 }
 
-/* Set widths on the form inputs since otherwise they're 100% wide */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+/* HEADER OVERLAY */
+#home-section {
+    width: 100% !important;
+    
+    background: url("../images/home-layout.png") no-repeat;
+    min-height: 250px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-attachment: fixed; }
+#home-section .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
+    min-height: 250px; }
+#home-section .home-inner {
+    padding-top: 150px; }
 
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
+
+
+

@@ -39,6 +39,8 @@
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
+            <e p="fontawesome-all.css" t="Include" />
+            <e p="fontawesome-all.min.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="site.min.css" t="Include" />
           </e>
@@ -48,6 +50,8 @@
             <e p="banner2.svg" t="Include" />
             <e p="banner3.svg" t="Include" />
             <e p="banner4.svg" t="Include" />
+            <e p="fateema.jpeg" t="Include" />
+            <e p="home-layout.png" t="Include" />
           </e>
           <e p="js" t="Include">
             <e p="site.js" t="Include" />
@@ -58,10 +62,14 @@
               <e p=".bower.json" t="Include" />
               <e p="dist" t="Include">
                 <e p="css" t="Include">
-                  <e p="bootstrap-theme.css" t="Include" />
-                  <e p="bootstrap-theme.css.map" t="Include" />
-                  <e p="bootstrap-theme.min.css" t="Include" />
-                  <e p="bootstrap-theme.min.css.map" t="Include" />
+                  <e p="bootstrap-grid.css" t="Include" />
+                  <e p="bootstrap-grid.css.map" t="Include" />
+                  <e p="bootstrap-grid.min.css" t="Include" />
+                  <e p="bootstrap-grid.min.css.map" t="Include" />
+                  <e p="bootstrap-reboot.css" t="Include" />
+                  <e p="bootstrap-reboot.css.map" t="Include" />
+                  <e p="bootstrap-reboot.min.css" t="Include" />
+                  <e p="bootstrap-reboot.min.css.map" t="Include" />
                   <e p="bootstrap.css" t="Include" />
                   <e p="bootstrap.css.map" t="Include" />
                   <e p="bootstrap.min.css" t="Include" />
@@ -75,9 +83,14 @@
                   <e p="glyphicons-halflings-regular.woff2" t="Include" />
                 </e>
                 <e p="js" t="Include">
+                  <e p="bootstrap.bundle.js" t="Include" />
+                  <e p="bootstrap.bundle.js.map" t="Include" />
+                  <e p="bootstrap.bundle.min.js" t="Include" />
+                  <e p="bootstrap.bundle.min.js.map" t="Include" />
                   <e p="bootstrap.js" t="Include" />
+                  <e p="bootstrap.js.map" t="Include" />
                   <e p="bootstrap.min.js" t="Include" />
-                  <e p="npm.js" t="Include" />
+                  <e p="bootstrap.min.js.map" t="Include" />
                 </e>
               </e>
               <e p="LICENSE" t="Include" />
@@ -85,9 +98,9 @@
             <e p="jquery" t="Include">
               <e p=".bower.json" t="Include" />
               <e p="dist" t="Include">
-                <e p="jquery.js" t="Include" />
-                <e p="jquery.min.js" t="Include" />
-                <e p="jquery.min.map" t="Include" />
+                <e p="jquery.slim.js" t="Include" />
+                <e p="jquery.slim.min.js" t="Include" />
+                <e p="jquery.slim.min.map" t="Include" />
               </e>
               <e p="LICENSE.txt" t="Include" />
             </e>
