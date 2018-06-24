@@ -1,6 +1,17 @@
-﻿.container {
+﻿
+html {
+    font-size: 1rem;
+}
+
+
+body{
+    background-color: #f5f5f5;
+
+}
+.container {
     max-width: 960px;
 }
+
 
 /*
  * Custom translucent site header
@@ -24,6 +35,14 @@
     text-decoration: none;
 }
 
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+.border-top-gray { border-top-color: #adb5bd; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.lh-condensed { line-height: 1.25; }
+
 /* HEADER OVERLAY */
 #home-section {
     width: 100% !important;
@@ -45,6 +64,33 @@
 #home-section .home-inner {
     padding-top: 150px; }
 
+#services{
+    margin-top: 270px;
+}
 
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.border-red{
+    border: 1px solid red;
+}
+
+.sign-container{
+   margin-top: 100px;
+   margin-bottom: 100px; 
+}
+.profile{
+    position: absolute;
+    top: 0; 
+    height: 100%;
+    left: 0; 
+    padding: 40px;
+    background-color: #ffffff;
+    width: 100%;
+}
 
 

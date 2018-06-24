@@ -1,0 +1,107 @@
+﻿@model IndexViewModel
+
+@{
+    Layout = "Layout";
+}
+
+<div class="row mt-5">
+    <div class="col-md-12 pt-3">
+        <ul class="tabs list-inline" style="background-color: #ededed;">
+            <li class="current" data-tab="all"><strong>All</strong></li>
+            <li class="" data-tab="active"><strong>Active</strong></li>
+            <li class="" data-tab="pending"><strong>Pending</strong></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row mt-5 tab-content current" id="all">
+    <div class="col-md-10 offset-md-1 mt-1 col-sm-12">
+        <table class="table table-hover table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var employee in Model.AllEmployees)
+            {
+                <tr>
+                    <a asp-action="Detail" asp-route-id="@employee.Id">
+                        <td class="">@employee.FirstName</td>
+                        <td class="">@employee.LastName</td>
+                        <td class="">@employee.Gender</td>
+                        <td class="">@employee.Email</td>
+                        <td class="">@employee.PhoneNumber</td>
+                    </a>
+                </tr> 
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row mt-5 tab-content" id="active">
+    <div class="col-md-10 offset-md-1 mt-1 col-sm-12">
+        <table class="table table-hover table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var employee in Model.ActiveEmployees)
+            {
+                <tr>
+                    <a asp-action="Detail" asp-route-id="@employee.Id">
+                        <td class="">@employee.FirstName</td>
+                        <td class="">@employee.LastName</td>
+                        <td class="">@employee.Gender</td>
+                        <td class="">@employee.Email</td>
+                        <td class="">@employee.PhoneNumber</td>
+                    </a>
+                </tr> 
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="row mt-5 tab-content" id="pending">
+    <div class="col-md-10 offset-md-1 mt-1 col-sm-12">
+        <table class="table table-hover table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var employee in Model.PendingEmployees)
+            {
+                <tr>
+                    <a asp-action="Detail" asp-route-id="@employee.Id">
+                        <td class="">@employee.FirstName</td>
+                        <td class="">@employee.LastName</td>
+                        <td class="">@employee.Gender</td>
+                        <td class="">@employee.Email</td>
+                        <td class="">@employee.PhoneNumber</td>
+                    </a>
+                </tr> 
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
+

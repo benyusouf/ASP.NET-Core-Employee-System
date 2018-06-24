@@ -1,0 +1,209 @@
+﻿@model SmartTech.Models.Admin.EditViewModel
+
+@{
+    Layout = "Layout";
+}
+
+<div class="row my-5" id="">
+    <div class="col-md-10 offset-md-1 mt-1">
+        <div class="card">
+            
+            <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Edit Employee Information</h5>
+          
+            <div class="card-body">
+                
+               <form method="post" asp-controller="Admin" asp-action="Edit" asp-route-id="@Model.Id" id="register" enctype="multipart/form-data">
+                  <div asp-validation-summary="All"></div>
+                  <div class="row">
+                    <div class="col-md-6 mb-3 input-group-sm">
+                      <label asp-for="FirstName"></label><span class="text-danger">*</span>
+                      <input type="text" asp-for="FirstName" class="form-control" value="@Model.FirstName" id="firstName" required>
+                      <span asp-validation-for="FirstName"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 input-group-sm">
+                      <label asp-for="LastName"></label><span class="text-danger">*</span>
+                      <input type="text" asp-for="LastName" class="form-control" value="@Model.LastName" id="lastName" required>
+                      <span asp-validation-for="LastName"></span>
+                    </div>
+                  </div>
+            
+                  <div class="row">
+                    <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                      <label asp-for="Email"></label><span class="text-danger">*</span>
+                      <div class="input-group-sm input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="text" asp-for="Email" class="form-control" value="@Model.Email" id="email" required>
+                        <span asp-validation-for="Email"></span>
+                      </div>
+                    </div>
+            
+                    <div class="mb-3 col-md-6">
+                      <label asp-for="PhoneNumber"></label><span class="text-danger">*</span>
+                      <div class="input-group-sm input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                        </div>
+                        <input type="text" asp-for="PhoneNumber" class="form-control" value="@Model.PhoneNumber" id="phone" required>
+                        <span asp-validation-for="PhoneNumber"></span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="mb-3 input-group-sm">
+                    <label asp-for="Address"></label><span class="text-danger">*</span>
+                    <input type="text" asp-for="Address" class="form-control" value="@Model.Address" id="address" required>
+                    <span asp-validation-for="Address"></span>
+                  </div>
+            
+                  <div class="row">
+                    <div class="col-md-6 mb-3 input-group-sm">
+                      <label asp-for="Gender"></label><span class="text-danger">*</span>
+                      <select asp-for="Gender" class="custom-select d-block w-100" id="gender" required>
+                        <option value="select">Please Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                      <span asp-validation-for="Gender"></span>
+                    </div>
+                    <div class="col-md-6 mb-3 input-group-sm">
+                      <label asp-for="MaritalStatus"></label><span class="text-danger">*</span>
+                      <select asp-for="MaritalStatus" class="custom-select d-block w-100" id="marital" required>
+                        <option value="select">Please Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                      </select>
+                      <span asp-validation-for="MaritalStatus"></span>
+                    </div>
+                  </div>
+            
+                 <div class="row">
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="BirthDate"></label><span class="text-danger">*</span>
+                     <input type="datetime" asp-for="BirthDate" class="form-control datepicker-here" value="@Model.BirthDate.Date" data-language="en" id="birthdate" required>
+                     <span asp-validation-for="BirthDate"></span>
+                   </div>
+            
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="NumberOfChildren"></label>
+                     <input asp-for="NumberOfChildren" type="text" class="form-control" value="@Model.NumberOfChildren" id="children">
+                     <span asp-validation-for="NumberOfChildren"></span>
+                     <span id="childrenerror" class="text-danger d-none hide" style="">Please specify number</span>
+                   </div>
+                 </div>
+                 
+                 <hr/>
+                 
+                 <div class="custom-control custom-checkbox mb-2">
+                   <input type="checkbox" class="custom-control-input" asp-for="Active">
+                   <label class="custom-control-label" asp-for="Active"></label>
+                 </div>
+                 
+                 <div class="row">
+                   <div class="col-md-6 mb-3 input-group-sm">
+                     <label asp-for="Department"></label><span class="text-danger">*</span>
+                     <select asp-for="Department" class="custom-select d-block w-100" id="department" required>
+                       <option value="select">Please Select</option>
+                       <option value="Accounting">Accounting</option> 
+                       <option value="Administration">Administration</option>
+                       <option value="Audit">Audit</option>
+                       <option value="Engineering">Engineering</option>
+                       <option value="ICT">ICT</option>
+                       <option value="HR">Human Resource</option>
+                       <option value="Marketing">Marketing</option>
+                       <option value="Operation">Operation</option>
+                       <option value="Sales">Sales</option>
+                       <option value="Security">Security</option>
+                     </select>
+                     <span asp-validation-for="Department"></span>
+                   </div>
+                   
+                   <div class="col-md-6 mb-3 input-group-sm">
+                     <label asp-for="Position"></label><span class="text-danger">*</span>
+                     <select asp-for="Position" class="custom-select d-block w-100" id="position" required>
+                       
+                     </select>
+                     <span asp-validation-for="Position"></span>
+                   </div>
+                 </div>
+                 
+                 <div class="mb-3 input-group-sm">
+                   <label asp-for="LastSchoolAttended"></label>
+                   <input type="text" asp-for="LastSchoolAttended" class="form-control" value="@Model.LastSchoolAttended" >
+                   <span asp-validation-for="LastSchoolAttended"></span>
+                 </div>
+                 
+                 <div class="mb-3 input-group-sm">
+                   <label asp-for="HighestQualification"></label>
+                   <input type="text" asp-for="HighestQualification" class="form-control" value="@Model.HighestQualification">
+                   <span asp-validation-for="HighestQualification"></span>
+                 </div>
+                 
+                 
+                 <div class="row">
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="DateJoined"></label><span class="text-danger">*</span>
+                     <input type="datetime" asp-for="DateJoined" class="form-control datepicker-here" value="@Model.DateJoined.Date" id="joined" data-language="en" required>
+                     <span asp-validation-for="DateJoined"></span>
+                   </div>
+            
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="ContractExpirationDate"></label>
+                     <input asp-for="ContractExpirationDate" type="datetime" class="form-control datepicker-here" value="@Model.ContractExpirationDate" id="expire" data-language="en" >
+                     <span asp-validation-for="ContractExpirationDate"></span>
+                   </div>
+                 </div>
+                 
+                 <label>Duration of Service</label><span class="text-danger">*</span>
+                 <div class="row">
+                   <div class="mb-3 col-md-2 input-group-sm">
+                     <input type="text" asp-for="YearsOfService" class="form-control" value="@Model.YearsOfService" id="years" required>
+                     <span asp-validation-for="YearsOfService"></span>
+                   </div>
+                   <div class="mb-3 col-md-2 pt-2 pl-0">
+                     <span>Years</span>
+                   </div>
+            
+                   <div class="mb-3 col-md-2 input-group-sm">
+                     <input asp-for="MonthsOfService" type="text" class="form-control" value="@Model.MonthsOfService" id="months" required>
+                     <span asp-validation-for="MonthsOfService"></span>
+                   </div>
+                   <div class="mb-3 col-md-2 pt-2 pl-0">
+                     <span>Months</span>
+                   </div>
+                   
+                   <div class="mb-3 col-md-2 input-group-sm">
+                     <input asp-for="DaysOfService" type="text" class="form-control" value="@Model.DaysOfService" id="days" required="">
+                     <span asp-validation-for="DaysOfService"></span>
+                   </div>
+                   <div class="mb-3 col-md-2 pt-2 pl-0">
+                     <span>Days</span>
+                   </div>
+                 </div>
+                 
+                 <div class="row">
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="LastDateOfPromotion"></label><span class="text-danger">*</span>
+                     <input type="datetime" asp-for="LastDateOfPromotion" class="form-control datepicker-here" value="@Model.LastDateOfPromotion.Date" data-language="en" required>
+                     <span asp-validation-for="LastDateOfPromotion"></span>
+                   </div>
+            
+                   <div class="mb-3 col-md-6 input-group-sm">
+                     <label asp-for="AnnualSalary"></label><span class="text-danger">*</span>
+                     <input asp-for="AnnualSalary" type="text" class="form-control" value="@Model.AnnualSalary" required>
+                     <span asp-validation-for="AnnualSalary"></span>
+                   </div>
+                 </div>
+            
+                 <hr class="mb-4">
+                  <button class="btn btn-primary btn-sm btn-block" type="submit">Update</button>
+                </form>  
+               
+               
+            </div>
+        </div>
+
+    </div>
+</div>

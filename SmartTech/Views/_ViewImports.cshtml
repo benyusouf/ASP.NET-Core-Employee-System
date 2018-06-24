@@ -1,2 +1,10 @@
-﻿@using SmartTech
+﻿@using Microsoft.AspNetCore.Identity
+@using SmartTech
+@using SmartTech.Models.Account
+@using SmartTech.Models.Admin
+@using SmartTech.Data.Entities
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@inject SignInManager<ApplicationUser> SignInManager
+
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

@@ -12,7 +12,49 @@
         <e p="bower.json" t="Include" />
         <e p="bundleconfig.json" t="Include" />
         <e p="Controllers" t="Include">
+          <e p="AccountController.cs" t="Include" />
+          <e p="AdminController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="Data" t="Include">
+          <e p="ApplicationContext.cs" t="Include" />
+          <e p="Entities" t="Include">
+            <e p="Admin.cs" t="Include" />
+            <e p="ApplicationUser.cs" t="Include" />
+            <e p="Employee.cs" t="Include" />
+          </e>
+          <e p="IApplicationUser.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20180618025435_Initial.cs" t="Include" />
+          <e p="20180618025435_Initial.Designer.cs" t="Include" />
+          <e p="20180618035211_Second.cs" t="Include" />
+          <e p="20180618035211_Second.Designer.cs" t="Include" />
+          <e p="20180618093124_Third.cs" t="Include" />
+          <e p="20180618093124_Third.Designer.cs" t="Include" />
+          <e p="20180618151408_Slight.cs" t="Include" />
+          <e p="20180618151408_Slight.Designer.cs" t="Include" />
+          <e p="20180619110600_Changes.cs" t="Include" />
+          <e p="20180619110600_Changes.Designer.cs" t="Include" />
+          <e p="20180619180054_Cleared.cs" t="Include" />
+          <e p="20180619180054_Cleared.Designer.cs" t="Include" />
+          <e p="20180622002309_Profile.cs" t="Include" />
+          <e p="20180622002309_Profile.Designer.cs" t="Include" />
+          <e p="ApplicationContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Account" t="Include">
+            <e p="EditViewModel.cs" t="Include" />
+            <e p="LoginViewModel.cs" t="Include" />
+            <e p="ProfileViewModel.cs" t="Include" />
+            <e p="RegisterViewModel.cs" t="Include" />
+          </e>
+          <e p="Admin" t="Include">
+            <e p="DetailViewModel.cs" t="Include" />
+            <e p="EditViewModel.cs" t="Include" />
+            <e p="IndexListingViewModel.cs" t="Include" />
+            <e p="IndexViewModel.cs" t="Include" />
+          </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="default" t="Include">
@@ -22,11 +64,26 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Services" t="Include">
+          <e p="ApplicationUserService.cs" t="Include" />
+        </e>
         <e p="SmartTech.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
+          <e p="Account" t="Include">
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Login.cshtml" t="Include" />
+            <e p="Profile.cshtml" t="Include" />
+            <e p="Register.cshtml" t="Include" />
+          </e>
+          <e p="Admin" t="Include">
+            <e p="Detail.cshtml" t="Include" />
+            <e p="Edit.cshtml" t="Include" />
+            <e p="Index.cshtml" t="Include" />
+            <e p="Layout.cshtml" t="Include" />
+          </e>
           <e p="Home" t="Include">
             <e p="About.cshtml" t="Include" />
             <e p="Contact.cshtml" t="Include" />
@@ -39,6 +96,10 @@
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
+            <e p="dashboard.css" t="Include" />
+            <e p="dashboard.min.css" t="Include" />
+            <e p="datepicker.css" t="Include" />
+            <e p="datepicker.min.css" t="Include" />
             <e p="fontawesome-all.css" t="Include" />
             <e p="fontawesome-all.min.css" t="Include" />
             <e p="site.css" t="Include" />
@@ -54,6 +115,9 @@
             <e p="home-layout.png" t="Include" />
           </e>
           <e p="js" t="Include">
+            <e p="datepicker.en.js" t="Include" />
+            <e p="datepicker.js" t="Include" />
+            <e p="datepicker.min.js" t="Include" />
             <e p="site.js" t="Include" />
             <e p="site.min.js" t="Include" />
           </e>
@@ -118,6 +182,46 @@
               <e p=".bower.json" t="Include" />
               <e p="jquery.validate.unobtrusive.js" t="Include" />
               <e p="jquery.validate.unobtrusive.min.js" t="Include" />
+            </e>
+          </e>
+          <e p="Uploads" t="Include">
+            <e p="03c5a856-125f-4771-932c-62e71e5afa21" t="Include">
+              <e p="IMG_9447.JPG" t="Include" />
+            </e>
+            <e p="154245bc-82f9-4a13-ae97-fdd774fd3ae9" t="Include" />
+            <e p="446d1636-6e69-47d1-8163-280dd7bdd79e" t="Include">
+              <e p="IMG_9322.JPG" t="Include" />
+            </e>
+            <e p="97046b12-2a69-4d36-b8c0-0fe99902df08" t="Include">
+              <e p="IMG_9268.PNG" t="Include" />
+              <e p="IMG_9433.JPG" t="Include" />
+              <e p="IMG_E9328 (1).JPG" t="Include" />
+            </e>
+            <e p="abdul.benyusuf@gmail.com" t="Include">
+              <e p="WIN_20180126_11_18_23_Pro.jpg" t="Include" />
+            </e>
+            <e p="abdul.benyusuf@hotmail.com" t="Include">
+              <e p="IMG_9268.PNG" t="Include" />
+            </e>
+            <e p="abdul.benyusuf@outlook.comm" t="Include">
+              <e p="a7eca060-aa21-4134-8cff-c8b6b9c7ae6a.jpeg" t="Include" />
+              <e p="IMG_9445.JPG" t="Include" />
+            </e>
+            <e p="abdul.benyusuf@outlook.commmm" t="Include">
+              <e p="IMG_E9532 (2).JPG" t="Include" />
+            </e>
+            <e p="exam@gmail.com" t="Include">
+              <e p="Abdullahi.jpeg" t="Include" />
+            </e>
+            <e p="jjthomas.aymtz@hotmail.com" t="Include">
+              <e p="Screenshot (4).png" t="Include" />
+            </e>
+            <e p="msalis@gmail.com" t="Include">
+              <e p="WIN_20171127_21_14_33_Pro.jpg" t="Include" />
+            </e>
+            <e p="umar@gmail.com" t="Include">
+              <e p="IMG_E9350.JPG" t="Include" />
+              <e p="IMG_E9357.JPG" t="Include" />
             </e>
           </e>
         </e>
