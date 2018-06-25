@@ -1,0 +1,10 @@
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\bin\default\netcoreapp1.1\SmartTech.deps.json
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\bin\default\netcoreapp1.1\SmartTech.runtimeconfig.json
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\bin\default\netcoreapp1.1\SmartTech.runtimeconfig.dev.json
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\bin\default\netcoreapp1.1\SmartTech.dll
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\bin\default\netcoreapp1.1\SmartTech.pdb
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\obj\default\netcoreapp1.1\SmartTech.csprojResolveAssemblyReference.cache
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\obj\default\netcoreapp1.1\SmartTech.csproj.CoreCompileInputs.cache
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\obj\default\netcoreapp1.1\SmartTech.AssemblyInfo.cs
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\obj\default\netcoreapp1.1\SmartTech.dll
+C:\Users\jjtho\RiderProjects\SmartTech\SmartTech\obj\default\netcoreapp1.1\SmartTech.pdb

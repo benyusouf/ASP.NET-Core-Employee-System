@@ -1,0 +1,25 @@
+{
+  "name": "SmartTech",
+  "authors": [
+    "Abdullahi Yusuf <abdul.benyusuf@gmail.com>"
+  ],
+  "description": "",
+  "main": "bower",
+  "keywords": [
+    "bo"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "jquery": "3.3.1",
+    "jquery-validation": "1.17.0"
+  }
+}
