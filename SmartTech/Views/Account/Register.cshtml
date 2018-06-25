@@ -5,131 +5,137 @@
     
 }  
   <div class="col-md-8 col-sm-12 offset-md-2 p-4 mt-5 mb-5">
-    <h4 class="mb-3">Employee Registration</h4>
-    <form method="post" asp-controller="Account" asp-action="Register" id="register" enctype="multipart/form-data">
-      <div asp-validation-summary="All"></div>
-      <div class="row">
-        <div class="col-md-6 mb-3 input-group-sm">
-          <label asp-for="FirstName"></label><span class="text-danger">*</span>
-          <input type="text" asp-for="FirstName" class="form-control" id="firstName" required>
-          <span asp-validation-for="FirstName"></span>
-        </div>
-        <div class="col-md-6 mb-3 input-group-sm">
-          <label asp-for="LastName"></label><span class="text-danger">*</span>
-          <input type="text" asp-for="LastName" class="form-control" id="lastName" required>
-          <span asp-validation-for="LastName"></span>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
-          <label asp-for="Email"></label><span class="text-danger">*</span>
-          <div class="input-group-sm input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-            </div>
-            <input type="text" asp-for="Email" class="form-control" id="email" required>
-            <span asp-validation-for="Email"></span>
+  <div class="card">
+            
+  <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">New Registration</h5>
+          
+    <div class="card-body">
+      <form method="post" asp-controller="Account" asp-action="Register" id="register" enctype="multipart/form-data">
+        <div asp-validation-summary="All"></div>
+        <div class="row">
+          <div class="col-md-6 mb-3 input-group-sm">
+            <label asp-for="FirstName"></label><span class="text-danger">*</span>
+            <input type="text" asp-for="FirstName" class="form-control" id="firstName" required>
+            <span asp-validation-for="FirstName"></span>
+          </div>
+          <div class="col-md-6 mb-3 input-group-sm">
+            <label asp-for="LastName"></label><span class="text-danger">*</span>
+            <input type="text" asp-for="LastName" class="form-control" id="lastName" required>
+            <span asp-validation-for="LastName"></span>
           </div>
         </div>
 
-        <div class="mb-3 col-md-6">
-          <label asp-for="PhoneNumber"></label><span class="text-danger">*</span>
-          <div class="input-group-sm input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text"><i class="fa fa-phone"></i></span>
+        <div class="row">
+          <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+            <label asp-for="Email"></label><span class="text-danger">*</span>
+            <div class="input-group-sm input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              </div>
+              <input type="text" asp-for="Email" class="form-control" id="email" required>
+              <span asp-validation-for="Email"></span>
             </div>
-            <input type="text" asp-for="PhoneNumber" class="form-control" id="phone" required>
-            <span asp-validation-for="PhoneNumber"></span>
+          </div>
+
+          <div class="mb-3 col-md-6">
+            <label asp-for="PhoneNumber"></label><span class="text-danger">*</span>
+            <div class="input-group-sm input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+              </div>
+              <input type="text" asp-for="PhoneNumber" class="form-control" id="phone" required>
+              <span asp-validation-for="PhoneNumber"></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="mb-3 col-md-6 input-group-sm">
-          <label asp-for="Password"></label><span class="text-danger">*</span>
-          <input type="password" asp-for="Password" class="form-control" id="password" required>
-          <span asp-validation-for="Password"></span>
+        <div class="row">
+          <div class="mb-3 col-md-6 input-group-sm">
+            <label asp-for="Password"></label><span class="text-danger">*</span>
+            <input type="password" asp-for="Password" class="form-control" id="password" required>
+            <span asp-validation-for="Password"></span>
+          </div>
+
+          <div class="mb-3 col-md-6 input-group-sm">
+            <label asp-for="ConfirmPassword"></label><span class="text-danger">*</span>
+            <input type="password" asp-for="ConfirmPassword" class="form-control" id="confirm" required>
+            <span asp-validation-for="ConfirmPassword"></span>
+          </div>
         </div>
 
-        <div class="mb-3 col-md-6 input-group-sm">
-          <label asp-for="ConfirmPassword"></label><span class="text-danger">*</span>
-          <input type="password" asp-for="ConfirmPassword" class="form-control" id="confirm" required>
-          <span asp-validation-for="ConfirmPassword"></span>
-        </div>
-      </div>
-
-      <div class="mb-3 input-group-sm">
-        <label asp-for="Address"></label><span class="text-danger">*</span>
-        <input type="text" asp-for="Address" class="form-control" id="address" required>
-        <span asp-validation-for="Address"></span>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-3 input-group-sm">
-          <label asp-for="Gender"></label><span class="text-danger">*</span>
-          <select asp-for="Gender" class="custom-select d-block w-100" id="gender" required>
-            <option value="select">Please Select</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-          <span asp-validation-for="Gender"></span>
-        </div>
-        <div class="col-md-6 mb-3 input-group-sm">
-          <label asp-for="MaritalStatus"></label><span class="text-danger">*</span>
-          <select asp-for="MaritalStatus" class="custom-select d-block w-100" id="marital" required>
-            <option value="select">Please Select</option>
-            <option value="Single">Single</option>
-            <option value="Married">Married</option>
-            <option value="Divorced">Divorced</option>
-          </select>
-          <span asp-validation-for="MaritalStatus"></span>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="mb-3 col-md-6 input-group-sm">
-          <label asp-for="BirthDate"></label><span class="text-danger">*</span>
-          <input type="datetime" asp-for="BirthDate" class="form-control datepicker-here" data-language="en" id="birthdate" required>
-          <span asp-validation-for="BirthDate"></span>
+        <div class="mb-3 input-group-sm">
+          <label asp-for="Address"></label><span class="text-danger">*</span>
+          <input type="text" asp-for="Address" class="form-control" id="address" required>
+          <span asp-validation-for="Address"></span>
         </div>
 
-        <div class="mb-3 col-md-6 input-group-sm">
-          <label asp-for="NumberOfChildren"></label>
-          <input asp-for="NumberOfChildren" type="text" class="form-control" id="children">
-          <span asp-validation-for="NumberOfChildren"></span>
-          <span id="childrenerror" class="text-danger hide">Please specify number</span>
-        </div>
-      </div>
-
-      <div class="mb-3 input-group-sm">
-        <label asp-for="ProfilePictureUrl"></label>
-        <input type="file" name="ProfilePictureUrl" asp-for="ProfilePictureUrl" class="form-control" id="picture"/>
-        <span asp-validation-for="ProfilePictureUrl"></span>
-      </div>
-
-      <div class="row">
-        <div class="col-md-6 mb-3 ">
-          <label asp-for="Role"></label><span class="text-danger">*</span>
-          <select asp-for="Role" class="custom-select d-block w-100" id="role" required>
-            <option value="select">Please Select</option>
-            <option value="admin">Admin</option>
-            <option value="employee">Employee</option>
-          </select>
-          <span asp-validation-for="Role"></span>
+        <div class="row">
+          <div class="col-md-6 mb-3 input-group-sm">
+            <label asp-for="Gender"></label><span class="text-danger">*</span>
+            <select asp-for="Gender" class="custom-select d-block w-100" id="gender" required>
+              <option value="select">Please Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <span asp-validation-for="Gender"></span>
+          </div>
+          <div class="col-md-6 mb-3 input-group-sm">
+            <label asp-for="MaritalStatus"></label><span class="text-danger">*</span>
+            <select asp-for="MaritalStatus" class="custom-select d-block w-100" id="marital" required>
+              <option value="select">Please Select</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+              <option value="Divorced">Divorced</option>
+            </select>
+            <span asp-validation-for="MaritalStatus"></span>
+          </div>
         </div>
 
-        <div class="mb-3 col-md-6 hide" id="admincode">
-          <label asp-for="AdminPasscode"></label><span class="text-danger">*</span>
-          <input asp-for="AdminPasscode" type="text" class="form-control" id="admin">
-          <span asp-validation-for="AdminPasscode"></span>
-          <span id="adminerror" class="text-danger hide">Invalid passcode</span>
-        </div>
-      </div>
+        <div class="row">
+          <div class="mb-3 col-md-6 input-group-sm">
+            <label asp-for="BirthDate"></label><span class="text-danger">*</span>
+            <input type="datetime" asp-for="BirthDate" class="form-control datepicker-here" data-language="en" id="birthdate" required>
+            <span asp-validation-for="BirthDate"></span>
+          </div>
 
-      <hr class="mb-4">
-      <button class="btn btn-primary btn-sm btn-block" type="submit">Register</button>
-    </form>
+          <div class="mb-3 col-md-6 input-group-sm">
+            <label asp-for="NumberOfChildren"></label>
+            <input asp-for="NumberOfChildren" type="text" class="form-control" id="children">
+            <span asp-validation-for="NumberOfChildren"></span>
+            <span id="childrenerror" class="text-danger hide">Please specify number</span>
+          </div>
+        </div>
+
+        <div class="mb-3 input-group-sm">
+          <label asp-for="ProfilePictureUrl"></label>
+          <input type="file" name="ProfilePictureUrl" asp-for="ProfilePictureUrl" class="form-control" id="picture"/>
+          <span asp-validation-for="ProfilePictureUrl"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3 ">
+            <label asp-for="Role"></label><span class="text-danger">*</span>
+            <select asp-for="Role" class="custom-select d-block w-100" id="role" required>
+              <option value="select">Please Select</option>
+              <option value="admin">Admin</option>
+              <option value="employee">Employee</option>
+            </select>
+            <span asp-validation-for="Role"></span>
+          </div>
+
+          <div class="mb-3 col-md-6 hide" id="admincode">
+            <label asp-for="AdminPasscode"></label><span class="text-danger">*</span>
+            <input asp-for="AdminPasscode" type="text" class="form-control" id="admin">
+            <span asp-validation-for="AdminPasscode"></span>
+            <span id="adminerror" class="text-danger hide">Invalid passcode</span>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-sm btn-block" type="submit">Register</button>
+      </form>
+    </div>
+    </div>
   </div>
 
 

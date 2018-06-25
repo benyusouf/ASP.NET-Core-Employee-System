@@ -152,6 +152,7 @@ namespace SmartTech.Controllers
             employee.LastName = vm.LastName;
             employee.Email = vm.Email;
             employee.PhoneNumber = vm.PhoneNumber;
+            employee.Address = vm.Address;
             employee.BirthDate = vm.BirthDate;
             employee.Gender = vm.Gender;
             employee.MaritalStatus = vm.MaritalStatus;

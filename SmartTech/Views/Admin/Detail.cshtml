@@ -63,7 +63,7 @@
                         
                         <div class="row">
                             <div class="col-md-6">
-                                <button type="button" class="btn btn-block btn-sm btn-success mb-2">Edit Employee</button>
+                                <a role="button" type="button" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-block btn-sm btn-success mb-2">Edit Employee</a>
                                 
                             </div>
                             <div class="col-md-6">
@@ -99,7 +99,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <a role="button" type="button" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
             </div>
         </div>
     </div>

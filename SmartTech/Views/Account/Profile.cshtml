@@ -64,10 +64,10 @@
         </div>
         <div class="col-md-3 order-1 order-md-2">
             <div class="list-group" id="list-tab" role="tablist">
-                <a class="list-group-item list-group-item-action active" data-toggle="list" href="" role="tab" aria-controls="home">Profile</a>
+                <a class="list-group-item list-group-item-action active" data-toggle="list" asp-action="Profile" asp-route-id="@Model.Id" role="tab" aria-controls="home">Profile</a>
                 <a class="list-group-item list-group-item-action" href="" role="tab" aria-controls="profile">Payment History</a>
                 <a class="list-group-item list-group-item-action" href="" role="tab" aria-controls="messages">Leave Request</a>
-                <a class="list-group-item list-group-item-action" href="" role="tab" aria-controls="settings">Edit Profile</a>
+                <a class="list-group-item list-group-item-action" asp-action="Edit" asp-route-id="@Model.Id" role="tab" aria-controls="settings">Edit Profile</a>
                 <a class="list-group-item list-group-item-action" href="" role="tab" aria-controls="settings" data-toggle="modal" data-target="#deletemodal">Delete Account</a>
                 <a class="list-group-item list-group-item-action" href="" role="tab" aria-controls="settings">Sign out</a>
             </div>
@@ -90,7 +90,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <a role="button" type="submit" asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
             </div>
         </div>
     </div>
