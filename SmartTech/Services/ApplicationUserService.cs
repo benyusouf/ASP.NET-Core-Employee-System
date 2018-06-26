@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using SmartTech.Data;
 using SmartTech.Data.Entities;
@@ -44,6 +43,11 @@ namespace SmartTech.Services
             return _context.ApplicationUsers.FirstOrDefault(u => u.Email == email);
         }
 
+        public Task<Admin> GetAdminById(string id)
+        {
+            return _context.Admins.SingleOrDefaultAsync(a => a.Id == id);
+        }
+
         public Employee GetEmployeeByEmail(string email)
         {
             return _context.Employees.FirstOrDefault(e => e.Email == email);
@@ -61,10 +65,9 @@ namespace SmartTech.Services
 
         public string GetRole(string id)
         {
-            var admin = _context.ApplicationUsers.OfType<Admin>().Where(u => u.Id == id);
+            var role = _context.ApplicationUsers.FirstOrDefault(u => u.Id == id)?.Role;
 
-            // ReSharper disable once SuspiciousTypeConversion.Global
-            return admin.Equals(true) ? "Administrator" : "Employee";
+            return role == "admin" ? "Administrator" : "Employee";
         }
 
         public string GetEmail(string id)
@@ -220,6 +223,12 @@ namespace SmartTech.Services
         public async Task UpdateAdmin(Admin admin)
         {
             _context.Admins.Update(admin);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAdmin(Admin admin)
+        {
+            _context.Admins.Remove(admin);
             await _context.SaveChangesAsync();
         }
     }

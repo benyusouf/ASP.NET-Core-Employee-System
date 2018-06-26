@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -11,6 +12,7 @@ using SmartTech.Models.Account;
 
 namespace SmartTech.Controllers
 {
+    [Authorize(Roles = "Employee, Admin")]
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -41,6 +43,7 @@ namespace SmartTech.Controllers
         
         // GET Register
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
@@ -48,6 +51,7 @@ namespace SmartTech.Controllers
         
         // POST Register
         [HttpPost]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel vm)
         {
@@ -73,9 +77,10 @@ namespace SmartTech.Controllers
                         await PictureUpload(vm.ProfilePictureUrl, admin.Id);
                         admin.ProfilePictureUrl = _filename;
                         await _applicationUser.UpdateAdmin(admin);
-                      
+
+                        await _userManager.AddToRoleAsync(admin, "Admin");
                         await _signInManager.SignInAsync(admin, false);
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Admin");
                     }
                     else
                     {
@@ -104,6 +109,7 @@ namespace SmartTech.Controllers
                         await PictureUpload(vm.ProfilePictureUrl, employee.Id);
                         employee.ProfilePictureUrl = _filename;
                         await _applicationUser.UpdateEmployee(employee);
+                        await _userManager.AddToRoleAsync(employee, "Employee");
                         return RedirectToAction("Index", "Home");
                     }
                     else
@@ -124,6 +130,7 @@ namespace SmartTech.Controllers
         
         // GET Login
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
@@ -131,6 +138,7 @@ namespace SmartTech.Controllers
         
         // POST Login
         [HttpPost]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel vm)
         {
@@ -151,7 +159,7 @@ namespace SmartTech.Controllers
                         await _signInManager.PasswordSignInAsync(vm.Email, vm.Password, vm.RememberMe, false);
                     if (adminResult.Succeeded)
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Admin");
                     }
                     else
                     {
@@ -188,7 +196,11 @@ namespace SmartTech.Controllers
             return View(vm);
         }
         
-        
+        // LOGOUT -- Logout Action
+        public async Task<IActionResult> Logout() { 
+            await _signInManager.SignOutAsync(); 
+            return RedirectToAction("Login", "Account"); 
+        }   
     
         // GET Profile
         public async Task<IActionResult> Profile(string id)
@@ -296,6 +308,7 @@ namespace SmartTech.Controllers
         
         
         // Profile Picture Function Definition to be called on Register and Edit post methods 
+        [AllowAnonymous]
         public async Task<string> PictureUpload(IFormFile imageName, string id)
         {
             if (imageName == null) return _filename;

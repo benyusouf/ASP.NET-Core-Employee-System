@@ -1,0 +1,81 @@
+﻿@model AdminProfileViewModel
+
+@{
+    Layout = "Layout";
+}
+
+<div class="row my-5" id="">
+    <div class="col-md-10 offset-md-1 mt-1">
+        <div class="card">
+            
+            <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Adminstrator Information</h5>
+          
+            <div class="card-body">
+                <div class="row py-2" style="background-color: bisque">
+                    <div class="col-md-3">
+                        <img class="img-fluid img-thumbnail" src="/uploads/@Model.Id/@Model.ProfilePictureUrl" alt="Profile Picture"/>
+                    </div>
+                    <div class="col-md-9" style="padding-top: 90px;">
+                        <h5 class="card-title align-bottom">@Model.FirstName @Model.LastName</h5>
+                    </div>
+                </div>
+                <h5 class="card-title text-primary mt-3">Personal Information</h5>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="card-text"><strong>Email: </strong>@Model.Email</p>
+                        <p class="card-text"><strong>Sex: </strong>@Model.Gender</p>
+                        <p class="card-text"><strong>Address: </strong>@Model.Address</p>
+                        <p class="card-text"><strong>Marital Status: </strong>@Model.MaritalStatus</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="card-text"><strong>Phone Number: </strong>@Model.PhoneNumber</p>
+                        <p class="card-text"><strong>DOB: </strong>@Model.BirthDate.Date</p>
+                        <p class="card-text"><strong>Number of Children: </strong>@Model.NumberOfChildren</p>
+                    </div>
+                </div>
+              
+                    
+                    <h5 class="card-title text-primary mt-3">Adminstration Information</h5>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="card-text"><strong>Role: </strong>@Model.Role</p>
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <p class="card-text"><strong>Admin Passcode: </strong>@Model.AdminPasscode</p>
+                            
+                        </div>
+                        
+                    </div>
+              
+                <hr/>
+                <div class="row">
+                    <div class="col-md-6 offset-md-6">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a role="button" type="button" asp-action="AdminEdit" asp-route-id="@Model.Id" class="btn btn-block btn-sm btn-success mb-2">Edit Profile</a>
+                                
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-block btn-sm btn-danger" data-toggle="modal" data-target="#deleteadmin">Delete Account</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+

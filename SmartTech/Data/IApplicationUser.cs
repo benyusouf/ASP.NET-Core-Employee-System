@@ -15,6 +15,7 @@ namespace SmartTech.Data
 
         ApplicationUser GetUserById(string id);
         ApplicationUser GetUserByEmail(string email);
+        Task<Admin> GetAdminById(string id);
         Employee GetEmployeeByEmail(string email);
 
         string GetFirstName(string id);
@@ -47,5 +48,6 @@ namespace SmartTech.Data
         Task UpdateEmployee(Employee employee);
         Task DeleteEmployee(Employee employee);
         Task UpdateAdmin(Admin admin);
+        Task DeleteAdmin(Admin admin);
     }
 }

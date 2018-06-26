@@ -6,38 +6,51 @@
 }
 
 
-<div class="text-center col-md-4 offset-md-4 sign-container">
-    <form class="form-signin" method="post" asp-controller="Account" asp-action="Login">
-        <div asp-validation-summary="All"></div>
-        <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+    <div class=" col-md-4 offset-md-4 sign-container">
+    <div class="card">
+                
+        <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Login</h5>
+              
+        <div class="card-body">
+            <form class="form-signin" method="post" asp-controller="Account" asp-action="Login">
+                <div asp-validation-summary="All"></div>
 
-        <div class="input-group mb-2">
-            <label for="inputEmail" class="sr-only" asp-for="Email"></label>
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
-            </div>
-            <input type="email" id="inputEmail" class="form-control" asp-for="Email" placeholder="Email address" required autofocus>
-            <span asp-validation-for="Email"></span>
+                <div class="input-group mb-2">
+                    <label for="inputEmail" class="sr-only" asp-for="Email"></label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" id="inputEmail" class="form-control" asp-for="Email" placeholder="Email address" required autofocus>
+                    <span asp-validation-for="Email"></span>
+                </div>
+
+
+                <div class="input-group">
+                    <label for="inputPassword" class="sr-only" asp-for="Password"></label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" id="inputPassword" class="form-control" asp-for="Password" placeholder="Password" required>
+                    <span asp-validation-for="Password"></span>
+                </div>
+
+                <div class="row  mb-3 mt-1">
+                    <div class="col-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" asp-for="RememberMe"> Remember me
+                            </label>
+                        </div> 
+                    </div>
+                    <div class="col-6">
+                        <a asp-action="Register">Register</a>
+                    </div>
+                </div>
+
+               
+                <button class="btn btn-sm btn-primary btn-block" type="submit">Login<i class="fa fa-sign-in-alt"></i></button>
+            </form>
         </div>
 
-
-        <div class="input-group">
-            <label for="inputPassword" class="sr-only" asp-for="Password"></label>
-            <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-key"></i></span>
-            </div>
-            <input type="password" id="inputPassword" class="form-control" asp-for="Password" placeholder="Password" required>
-            <span asp-validation-for="Password"></span>
-        </div>
-
-
-        <div class="checkbox mb-3 mt-1">
-            <label>
-                <input type="checkbox" asp-for="RememberMe"> Remember me
-            </label>
-        </div>
-        <button class="btn btn-sm btn-primary btn-block" type="submit">Login<i class="fa fa-sign-in-alt"></i></button>
-    </form>
-</div>
-
-
+    </div>
+    </div>

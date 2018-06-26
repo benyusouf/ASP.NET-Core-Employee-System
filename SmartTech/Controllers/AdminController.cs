@@ -1,18 +1,26 @@
-﻿using System.Linq;
+﻿using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SmartTech.Data;
 using SmartTech.Models.Admin;
 
 namespace SmartTech.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly IApplicationUser _applicationUser;
+        private readonly IHostingEnvironment _environment;
+        private static string _filename;
 
-        public AdminController(IApplicationUser applicationUser)
+        public AdminController(IApplicationUser applicationUser, IHostingEnvironment environment)
         {
             _applicationUser = applicationUser;
+            _environment = environment;
         }
         
         // GET -- Index - Listing All Registered Employee Action
@@ -181,6 +189,113 @@ namespace SmartTech.Controllers
             var employee = await _applicationUser.GetEmployeeById(id);
             await _applicationUser.DeleteEmployee(employee);   
             return RedirectToAction("Index");
+        }
+        
+        
+        // GET -- Admin Profile Action - Display Admin registration Detail
+        public async Task<IActionResult> AdminProfile(string id)
+        {
+            var profile = await _applicationUser.GetAdminById(id);
+            var role = _applicationUser.GetRole(id);
+
+            if (profile == null) return View();
+            var model = new AdminProfileViewModel
+            {
+                Id = profile.Id,
+                FirstName = profile.FirstName,
+                LastName = profile.LastName,
+                Email = profile.Email,
+                PhoneNumber = profile.PhoneNumber,
+                Address = profile.Address,
+                BirthDate = profile.BirthDate,
+                Gender = profile.Gender,
+                NumberOfChildren = profile.NumberOfChildren,
+                MaritalStatus = profile.MaritalStatus,
+                Role = role,
+                ProfilePictureUrl = profile.ProfilePictureUrl,
+                AdminPasscode = profile.AdminPasscode    
+            };
+            return View(model);
+        }
+        
+        // GET -- Admin Profile Edit Action - Display Admin Edit Page with some data from the database
+        public async Task<IActionResult> AdminEdit(string id)
+        {
+            var admin = await _applicationUser.GetAdminById(id);
+            if (admin == null) return View();
+            var model = new AdminEditViewModel
+            {
+                Id = admin.Id,
+                FirstName = admin.FirstName,
+                LastName = admin.LastName,
+                Email = admin.Email,
+                PhoneNumber = admin.PhoneNumber,
+                Address = admin.Address,
+                BirthDate = admin.BirthDate.Date,
+                Gender = admin.Gender,
+                NumberOfChildren = admin.NumberOfChildren,
+                MaritalStatus = admin.MaritalStatus,
+            };
+            
+            return View(model);
+        }
+        
+        // POST -- Admin Profile Edit Action -- Submit and Update Changes to the database
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AdminEdit(string id, AdminEditViewModel vm)
+        {
+            if (!ModelState.IsValid) return View();
+            
+            // Creating path to upload picture and uploading picture -- Accessed from AccountController
+            await PictureUpload(vm.ProfilePictureUrl, vm.Id);
+
+            var admin = await _applicationUser.GetAdminById(id);
+            if (admin == null) return View();
+            admin.FirstName = vm.FirstName;
+            admin.LastName = vm.LastName;
+            admin.Email = vm.Email;
+            admin.Address = vm.Address;
+            admin.PhoneNumber = vm.PhoneNumber;
+            admin.BirthDate = vm.BirthDate;
+            admin.Gender = vm.Gender;
+            admin.MaritalStatus = vm.MaritalStatus;
+            admin.NumberOfChildren = vm.NumberOfChildren;
+            admin.ProfilePictureUrl = _filename;
+
+            await _applicationUser.UpdateAdmin(admin);
+            return RedirectToAction("AdminProfile", new {id = admin.Id});
+        }
+        
+        // DELETE -- Delete Admin Account
+        public async Task<IActionResult> AdminDelete(string id)
+        {
+            var admin = await _applicationUser.GetAdminById(id);
+            await _applicationUser.DeleteAdmin(admin);
+            return RedirectToAction("Login", "Account");
+        }
+        
+        
+        // Profile Picture Function Definition to be called on Register and Edit post methods 
+        public async Task<string> PictureUpload(IFormFile imageName, string id)
+        {
+            if (imageName == null) return _filename;
+            var uploadPath = Path.Combine(_environment.WebRootPath, "uploads");
+            Directory.CreateDirectory(Path.Combine(uploadPath, id));
+            _filename = imageName.FileName;
+
+            // Check to see if user agent is IE
+            if (_filename.Contains('\\'))
+            {
+                _filename = _filename.Split('\\').Last();
+            }
+
+            using (var fileStream = new FileStream(Path.Combine(uploadPath, id, _filename), FileMode.Create))
+            {
+                await imageName.CopyToAsync(fileStream);
+            }
+
+            return _filename;
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,97 +28,119 @@
     </environment>
 </head>
 <body>
-   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" asp-controller="Home" asp-action="Index">SmartTech Inc.</a>
+   <nav class="navbar navbar-light fixed-top bg-light flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" asp-controller="Home" asp-action="Index"><img src="/images/strikethrough.svg" height="30px" width="30px"/></a>
       <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
       <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
+          <a class="nav-link" asp-controller="Account" asp-action="Logout">Sign out</a>
         </li>
       </ul>
     </nav>
 
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Dashboard</span>  
-            </h6>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Employees <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Leave Requests
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Payroll
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Departments
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Career Desk
-                </a>
-              </li>
-            </ul>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Admin Dashboard</span>  
+        </h6>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" asp-controller="Admin" asp-action="Index">
+              Employees <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Leave Requests
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Payroll
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Departments
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Reports
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Career Desk
+            </a>
+          </li>
+        </ul>
 
-            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Manage Account</span>
-            </h6>
-            <ul class="nav flex-column mb-2">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Profile
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Edit Profile
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Delete Account
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Sign out
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+          <span>Manage Account</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
+            <a class="nav-link" asp-action="AdminProfile" asp-route-id="@UserManager.GetUserId(User)">
+              Profile
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-action="AdminEdit" asp-route-id="@UserManager.GetUserId(User)">
+              Edit Profile
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" href="" data-target="#deleteadmin" >
+              Delete Account
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" asp-controller="Account" asp-action="Logout" >
+              Sign out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           
+      <div class="container-fluid">
+        @RenderBody()
+            
+        <footer class="footer ml-0 text-center">
           <div class="container-fluid">
-            @RenderBody()
-            <hr/>
-            <footer>
-              <p>&copy; 2018 - SmartTech</p>
-            </footer>
+            <span class="text-muted">&copy; 2018 - SmartTech</span>
           </div>
+        </footer>
+      </div>
          
-        </main>
+    </main>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteadmin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Administrator Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Please confirm deletion of your administrator account, you must have admin passcode to register again!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
+        <a role="button" type="button" asp-action="AdminDelete" asp-route-id="@UserManager.GetUserId(User)" class="btn btn-danger">Delete</a>
       </div>
     </div>
+  </div>
+</div>
 
 
 
