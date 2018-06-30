@@ -1,0 +1,21 @@
+﻿@model AccountCreatedViewModel
+
+@{
+    ViewBag.Title = "Success";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 access">
+            <div class="card">
+            
+                <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Account Created</h5>
+          
+                <div class="card-body">
+                    <h6 class="card-text">Dear @Model.FirstName @Model.LastName your employee account with SmartTech has been created successfully. However, you will not be able to access your account until you are verified and accepted. Look forward to an email from one of our administrators. Thank you</h6>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -110,7 +110,7 @@ namespace SmartTech.Controllers
                         employee.ProfilePictureUrl = _filename;
                         await _applicationUser.UpdateEmployee(employee);
                         await _userManager.AddToRoleAsync(employee, "Employee");
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("AccountCreated", new { firstName = vm.FirstName, lastName = vm.LastName});
                     }
                     else
                     {
@@ -166,8 +166,11 @@ namespace SmartTech.Controllers
                         ModelState.AddModelError("", "Incorrect Password!");
                         return View();
                     }
+/*
                     break;
-                    
+*/
+                   
+
                 case "employee":
                     var employee = _applicationUser.GetEmployeeByEmail(vm.Email);
                     if (employee.Active)
@@ -181,19 +184,27 @@ namespace SmartTech.Controllers
                             
                             return RedirectToAction("Profile", new {id = employee.Id});
                         }
+                        {
+                            ModelState.AddModelError("", "Incorrect Password!");
+                            return View();
+                        }
                     }
                     else
                     {
-                        return RedirectToAction("Contact", "Home");
+                        return RedirectToAction("AccountNotActive", new { firstName = employee.FirstName, lastName = employee.LastName});
                     }
+/*
                     break;
+*/
                     
                 default:
                     ModelState.AddModelError("", "Invalid Login Attempt!");
                     return View(vm);
             }
 
+/*
             return View(vm);
+*/
         }
         
         // LOGOUT -- Logout Action
@@ -303,7 +314,41 @@ namespace SmartTech.Controllers
         }
         
         
+        // GET -- Access Denied Action
+        [AllowAnonymous]
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
         
+        // GET -- Account Created Action
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccountCreated(string firstName, string lastName)
+        {
+            var model = new AccountCreatedViewModel
+            {
+                FirstName = firstName,
+                LastName = lastName
+            };
+
+            return View(model);
+        }
+        
+        
+        // GET -- Account Not Active Action
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult AccountNotActive(string firstName, string lastName)
+        {
+            var model = new AccountNotActiveViewModel
+            {
+                FirstName = firstName,
+                LastName = lastName
+            };
+
+            return View(model);
+        }
         
         
         

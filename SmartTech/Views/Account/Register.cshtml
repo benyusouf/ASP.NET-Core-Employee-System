@@ -30,7 +30,7 @@
             <label asp-for="Email"></label><span class="text-danger">*</span>
             <div class="input-group-sm input-group">
               <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                <span class="input-group-text"><img src="/images/envelope.svg" height="20px" width="20px"/></span>
               </div>
               <input type="text" asp-for="Email" class="form-control" id="email" required>
               <span asp-validation-for="Email"></span>
@@ -41,7 +41,7 @@
             <label asp-for="PhoneNumber"></label><span class="text-danger">*</span>
             <div class="input-group-sm input-group">
               <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                <span class="input-group-text"><img src="/images/mobile-alt.svg" height="20px" width="20px"/></span>
               </div>
               <input type="text" asp-for="PhoneNumber" class="form-control" id="phone" required>
               <span asp-validation-for="PhoneNumber"></span>
@@ -108,7 +108,7 @@
 
         <div class="mb-3 input-group-sm">
           <label asp-for="ProfilePictureUrl"></label>
-          <input type="file" name="ProfilePictureUrl" asp-for="ProfilePictureUrl" class="form-control" id="picture"/>
+          <input type="file" name="ProfilePictureUrl" asp-for="ProfilePictureUrl" class="form-control-file" id="picture" required/>
           <span asp-validation-for="ProfilePictureUrl"></span>
         </div>
 

@@ -18,7 +18,7 @@
                 <div class="input-group mb-2">
                     <label for="inputEmail" class="sr-only" asp-for="Email"></label>
                     <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                        <span class="input-group-text"><img src="/images/envelope.svg" height="20px" width="20px"/></span>
                     </div>
                     <input type="email" id="inputEmail" class="form-control" asp-for="Email" placeholder="Email address" required autofocus>
                     <span asp-validation-for="Email"></span>
@@ -28,7 +28,7 @@
                 <div class="input-group">
                     <label for="inputPassword" class="sr-only" asp-for="Password"></label>
                     <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        <span class="input-group-text"><img src="/images/key.svg" height="20px" width="20px"/></span>
                     </div>
                     <input type="password" id="inputPassword" class="form-control" asp-for="Password" placeholder="Password" required>
                     <span asp-validation-for="Password"></span>
@@ -48,7 +48,7 @@
                 </div>
 
                
-                <button class="btn btn-sm btn-primary btn-block" type="submit">Login<i class="fa fa-sign-in-alt"></i></button>
+                <button class="btn btn-sm btn-primary btn-block" type="submit">Login</button>
             </form>
         </div>
 

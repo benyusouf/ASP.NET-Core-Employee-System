@@ -147,7 +147,7 @@ namespace SmartTech.Controllers
             return View(model);
         }
         
-        // POST -- Edit - Submit Employee changes and Update Employee
+        // POST -- Edit - Submit Admin changes and Update Employee
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, EditViewModel vm)

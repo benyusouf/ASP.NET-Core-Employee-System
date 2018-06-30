@@ -1,49 +1,98 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <header id="home-section">
   <div class="dark-overlay">
-    <div class="home-inner">
+    <div class="home-inner pt-sm-5">
       <div class="container">
-        <div class="row">
-               
-                
+        <div class="row pt-md-3">
+          <div class=" col text-light text-center pt-md-5">
+            <div class="p-5">
+              <h4 class="display-4">The smart way to go</h4>
+              <p class="lead">With less cost your company may be the next lead in the industry, you are just one click ahead</p>
+              <a class="btn btn-outline-primary">Discover Now</a>
+            </div>
+          </div>         
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<div class="container" id="services">
-<div class="row mb-2">
-  <div class="col-md-6">
-    <div class="card flex-md-row mb-4 box-shadow h-md-250">
-      <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-primary">World</strong>
-        <h3 class="mb-0">
-          <a class="text-dark" href="#">Featured post</a>
-        </h3>
-        <div class="mb-1 text-muted">Nov 12</div>
-        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#">Continue reading</a>
+<div class="container mt-5 mt-md-0">
+  <div class="row my-5">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <div class="card flex-md-row box-shadow h-md-250">
+        <img class="card-img-right flex-auto d-none d-md-block" src="/images/software.jpeg" height="220px" width="200px" alt="Card image cap">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-primary">Software Solutions</strong>
+          <p class="card-text mb-1 text-justify">We build elegant and unique software solutions for our clients using robust technologies.</p>
+          <a href="#">Learn More</a>
+        </div>
       </div>
-      <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
     </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card flex-md-row mb-4 box-shadow h-md-250">
-      <div class="card-body d-flex flex-column align-items-start">
-        <strong class="d-inline-block mb-2 text-success">Design</strong>
-        <h3 class="mb-0">
-          <a class="text-dark" href="#">Post title</a>
-        </h3>
-        <div class="mb-1 text-muted">Nov 11</div>
-        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-        <a href="#">Continue reading</a>
+    <div class="col-md-6">
+      <div class="card flex-md-row box-shadow h-md-250">
+        <div class="card-body d-flex flex-column align-items-start">
+          <strong class="d-inline-block mb-2 text-primary">Network Infrastructure</strong>
+          <p class="card-text mb-1 text-justify">Maganing your data center may look scary and expensive. However, the case is different when we handle it for you.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <img class="card-img-right flex-auto d-none d-md-block" src="/images/network.jpeg" height="220px" width="200px" alt="Card image cap">
       </div>
-      <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
     </div>
   </div>
 </div>
+
+
+<div class="container-fluid text-light mb-5 mt-0" style="background-color: #000000">
+  <div class="row">
+    <div class=" col text-center">
+      <div class="p-3">
+        <h1 class="display-4">Explore</h1>
+        <p class="lead">We have hundreds of solutions already designed to suit your company. We also offer custom services of your taste deliver to you faster than you may think. We will never have a second date.</p>
+        <a class="btn btn-outline-primary">Find out More</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+<div class="container-fluid my-5 p-5">
+  <div class="row">
+    <div class="col-md-7 pt-5 mt-5 order-2 order-md-1">
+      <h5 class="card-title text-justify"><strong>Growing your market not only help popularize your products and services but also help your company grow</strong></h5>
+      <h6 class="card-text text-justify">With our inbound marketing strategies, you company will experience a high rate market growth in whatever industry you function, whether Financial, Estate, Agriculture, Production, Consulting etc</h6>
+      <button class="btn btn-primary">Find out Now</button>
+    </div>
+    
+    <div class="col-md-5 text-center order-1 order-md-2 pr-5">
+      <img alt="marketing" src="/images/marketing.png" class="img-fluid rotate"/>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mb-3 py-5 px-5 bg-light">
+  <div class="row px-5">
+    <div class="col-md-4 text-center mb-3">
+      <img src="/images/design.svg" height="50px" width="50px" alt="Design"/>
+      <h6 class="card-title mt-2"><strong>Design</strong></h6>
+      <p>Optimize your cost by exploring our first class business design solutions specifically developed to suit your business products and services.</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="col-md-4 text-center mb-3">
+      <img src="/images/analytics.svg" height="50px" width="50px" alt="Design"/>
+      <h6 class="card-title mt-2"><strong>Data Analytics</strong></h6>
+      <p>You satisfy your customer well when you know the types and classes of people patronize your business. Our data analytic tools are there to help you.</p>
+      <a href="#">Learn more</a>
+    </div>
+    <div class="col-md-4 text-center mb-3">
+      <img src="/images/marketing.svg" height="50px" width="50px" alt="Design"/>
+      <h6 class="card-title mt-2"><strong>Marketing</strong></h6>
+      <p>Striving in the current digital marketplace may seems a break thorough task.  For us, it's a thing we master and wish to go with your company along</p>
+      <a href="#">Learn more</a>
+    </div>
+  </div>
+</div>
+
+

@@ -2,7 +2,7 @@
 
 $(function() {
     
-    //Show and hide Admin passcode base on role change
+    //Show and hide Admin passcode base on role selected
     $('#role').change(function(){
         var adminValue = $('#role').val().toString().toLowerCase();
         if(adminValue === 'admin') {
@@ -30,7 +30,7 @@ $(function() {
         
         
         //Admin Passcode Validation
-        if (role == 'admin' && code != '62829800'){
+        if (role === 'admin' && code !== '62829800'){
             preventDefaultAndShowError(e, adminerror);
         } 
         
@@ -38,14 +38,14 @@ $(function() {
         
         $('.custom-select').each(function () {
             var selected = $(this).val().toString().toLowerCase();
-            if(selected == "select"){
+            if(selected === "select"){
                 e.preventDefault();
                 $(this).addClass('border-red');
             }
         });
 
         //Validation for number of children
-        if (jQuery.type(parseInt(children)) != 'number') {
+        if (jQuery.type(parseInt(children)) !== 'number') {
             preventDefaultAndShowError(e, childrenerror);
         }
         
@@ -55,7 +55,7 @@ $(function() {
     // Remove red border from select tag after choosing correct option
     $('.custom-select').change(function () {
         var selected = $(this).val().toString().toLowerCase();
-        if(selected != 'select'){
+        if(selected !== 'select'){
             $(this).removeClass('border-red');
         }
     });
@@ -75,10 +75,10 @@ $(function() {
     $('#department').change(function() {
         var val = $(this).val();
         var position = $('#position');
-        if (val == "select") {
+        if (val === "select") {
             position.html('');
         } 
-        else if (val == "Accounting") {
+        else if (val === "Accounting") {
             position.html('' +
                 '<option value="GM-Accounting">General Manager Accounting</option>' +
                 '<option value="AGM-Accounting">Asst. General Manager Accounting</option>' +
@@ -87,7 +87,7 @@ $(function() {
                 '<option value="Accountant-3">Accountant-III</option>' +
                 '');
         }
-        else if (val == "Administration") {
+        else if (val === "Administration") {
             position.html('' +
                 '<option value="GM-Administration">General Manager Admin</option>' +
                 '<option value="AGM-Administration">Asst. General Manager Admin</option>' +
@@ -96,7 +96,7 @@ $(function() {
                 '<option value="Editor">Editor</option>' +
                 '');
         }
-        else if (val == "Audit") {
+        else if (val === "Audit") {
             position.html('' +
                 '<option value="GM-Audit">General Manager Audit</option>' +
                 '<option value="AGM-Audit">Asst. General Manager Audit</option>' +
@@ -105,7 +105,7 @@ $(function() {
                 '<option value="Auditor-3">Auditor-III</option>' +
                 '');
         }
-        else if (val == "Engineering") {
+        else if (val === "Engineering") {
             position.html('' +
                 '<option value="GM-Engineering">General Manager Engineering</option>' +
                 '<option value="AGM-Engineering">Asst. General Manager Engineering</option>' +
@@ -114,7 +114,7 @@ $(function() {
                 '<option value="Workshop-Assistant">Workshop Assistant</option>' +
                 '');
         }
-        else if (val == "ICT") {
+        else if (val === "ICT") {
             position.html('' +
                 '<option value="GM-ICT">General Manager ICT</option>' +
                 '<option value="AGM-ICT">Asst. General Manager ICT</option>' +
@@ -123,7 +123,7 @@ $(function() {
                 '<option value="Data-Analyst">Data Analyst</option>' +
                 '');
         }
-        else if (val == "HR") {
+        else if (val === "HR") {
             position.html('' +
                 '<option value="GM-HR">General Manager HR</option>' +
                 '<option value="AGM-HR">Asst. General Manager HR</option>' +
@@ -132,7 +132,7 @@ $(function() {
                 '<option value="Recruiter-2">Recruiter-2</option>' +
                 '');
         }
-        else if (val == "Marketing") {
+        else if (val === "Marketing") {
             position.html('' +
                 '<option value="GM-Marketing">General Manager Marketing</option>' +
                 '<option value="AGM-Marketing">Asst. General Manager Marketing</option>' +
@@ -141,7 +141,7 @@ $(function() {
                 '<option value="Marketer">Marketer</option>' +
                 '');
         }
-        else if (val == "Operation") {
+        else if (val === "Operation") {
             position.html('' +
                 '<option value="GM-Operation">General Manager Operation</option>' +
                 '<option value="AGM-Operation">Asst. General Manager Operation</option>' +
@@ -150,7 +150,7 @@ $(function() {
                 '<option value="HD-Officer">Help Desk Officer</option>' +
                 '');
         }
-        else if (val == "Sales") {
+        else if (val === "Sales") {
             position.html('' +
                 '<option value="GM-Sales">General Manager Sales</option>' +
                 '<option value="AGM-Sales">Asst. General Manager Sales</option>' +
@@ -159,7 +159,7 @@ $(function() {
                 '<option value="Receptionist">Receptionist</option>' +
                 '');
         }
-        else if (val == "Security") {
+        else if (val === "Security") {
             position.html('' +
                 '<option value="GM-Security">General Manager Security</option>' +
                 '<option value="CS-Officer">Chief Security Officer</option>' +
@@ -172,14 +172,16 @@ $(function() {
     
     // Restricting Contract Expire date selection to today and date ahead
 
-    $('#expire').datepicker({
+    var expire = $('#expire');
+        
+    expire.datepicker({
         language: 'en',
         minDate: new Date()
     });
     
     
     // Populating Duration of Service Fields
-    $('#expire').change(function () {
+    expire.change(function () {
         var dateJoined = $('#joined').val();
         var dateExpire = $(this).val();
         
@@ -191,8 +193,14 @@ $(function() {
     });
 
     // Triggering Expire Change event
-    $( '#years, #months, #days').click(function() {
+    $('#years, #months, #days').click(function() {
         $('#expire').change();
+    });
+    
+    // Back Button
+    $('#back').click(function (e) {
+        e.preventDefault();
+        window.history.back();
     });
     
 });

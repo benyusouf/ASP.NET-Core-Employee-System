@@ -6,16 +6,11 @@
     <title>@ViewData["Title"] - SmartTech</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/css/fontawesome-all.css"/>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
         <link rel="stylesheet" href="~/css/datepicker.css"/>
         <link rel="stylesheet" href="~/css/site.css"/>
     </environment>
     <environment names="Staging,Production">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-              integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" 
-              asp-fallback-href="~/css/fontawesome-all.min.css"
-              crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
@@ -27,31 +22,45 @@
 </head>
 <body>
 
-<nav class=" sticky-top py-1 shadow navbar-light bg-light">
+<nav class="sticky-top py-1 shadow navbar-light bg-light ">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
         <a class="py-2" asp-controller="Home" asp-action="Index">
-            <img src="/images/strikethrough.svg" height="30px" width="30px"/>
+            <img src="/images/brand.svg" alt="brand" height="25px" width="25px"/>
         </a>
+ 
         <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="Index">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Services</a>
-        <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="About">About Us</a>
+  
+   
+        <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="Services">Services</a>
+    
+   
+        <a class=" py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="About">About Us</a>
+   
+   
         <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="Contact">Contact Us</a>
+    
+   
         <a class="py-2 d-none d-md-inline-block" asp-controller="Account" asp-action="Login">Staff Login</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">FAQs</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Blog</a>
+  
+   
+        <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="FaQs">FAQs</a>
+   
+        <a class="py-2 d-none d-md-inline-block" asp-controller="Home" asp-action="Blog">Blog</a>
+            
+       
     </div>
 </nav>
 
-<div class="container-fluid">
+
     @RenderBody()
       
-    <footer class="footer ml-0 text-center">
+    <footer class="footer text-center bg-secondary">
         <div class="container-fluid">
-            <span class="text-muted">&copy; 2018 - SmartTech</span>
+            <span class="text-light">&copy; 2018 - SmartTech</span>
         </div>
     </footer>
     
-</div>
+
 
 <environment names="Development">
     <script src="~/lib/jquery/dist/jquery.slim.js"></script>

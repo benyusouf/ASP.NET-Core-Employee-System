@@ -1,17 +1,92 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"].</h2>
-<h3>@ViewData["Message"]</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<div class="container-fluid my-5 p-5">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card">
+                
+                <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Contact Us</h5>
+              
+                <div class="card-body">
+                    <h6 class="card-text">Leave us a message, we would love to hear from you.</h6>
+                    <form >
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" class="form-control"/>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" class="form-control"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Send" class="btn btn-primary float-right"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="card">
+                
+                        <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Business Addresses</h5>
+              
+                        <div class="card-body">
+                            <h6 class="card-title text-muted">Head Office</h6>
+                            <p>
+                                4E Kanta Road off Ahmadu Bello Way<br/>
+                                Unguwar Sarki, Kaduna.<br/>
+                            </p>
+                            
+                            <h6 class="card-title text-muted">Branch Office</h6>
+                            <p>
+                                122 Discovery plaza Adetokumbo Ademola Crescent<br/>
+                                Wuse 2, Abuja.<br/>
+                            </p>
+                            
+                            <h6 class="card-title text-muted">Business Hours</h6>
+                            <p>
+                                Monday - Friday <span class="text-muted"><i>8:00AM - 6:00PM</i></span><br/>
+                                Saturday <span class="text-muted"><i>9:00AM - 4:00PM</i></span><br/>
+                                Sunday <span class="text-muted"><i>Closed</i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                
+                        <h5 class="card-header text-primary" style="height: 40px; padding-top: 8px">Support Contacts</h5>
+              
+                        <div class="card-body">
+                            <h6 class="card-title text-muted">Emails</h6>
+                            <p>
+                                <strong>Support:</strong> <a href="mailto:support@smarttech.com">support@smarttech.com</a><br/>
+                                <strong>Info:</strong> <a href="mailto:info@smarttech.com">info@smarttech.com</a><br/>
+                                <strong>Career:</strong> <a href="mailto:career@smarttech.com">career@smarttech.com</a>
+                            </p>
+                            
+                            <h6 class="card-title text-muted">Telephones</h6>
+                            <p>
+                                166-1879-0985<br/>
+                                166-0863-1414
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>

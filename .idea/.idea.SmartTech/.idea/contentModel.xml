@@ -47,6 +47,8 @@
         </e>
         <e p="Models" t="Include">
           <e p="Account" t="Include">
+            <e p="AccountCreatedViewModel.cs" t="Include" />
+            <e p="AccountNotActiveViewModel.cs" t="Include" />
             <e p="EditViewModel.cs" t="Include" />
             <e p="LoginViewModel.cs" t="Include" />
             <e p="ProfileViewModel.cs" t="Include" />
@@ -78,6 +80,9 @@
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="_ViewStart.cshtml" t="Include" />
           <e p="Account" t="Include">
+            <e p="AccessDenied.cshtml" t="Include" />
+            <e p="AccountCreated.cshtml" t="Include" />
+            <e p="AccountNotActive.cshtml" t="Include" />
             <e p="Edit.cshtml" t="Include" />
             <e p="Login.cshtml" t="Include" />
             <e p="Profile.cshtml" t="Include" />
@@ -93,8 +98,11 @@
           </e>
           <e p="Home" t="Include">
             <e p="About.cshtml" t="Include" />
+            <e p="Blog.cshtml" t="Include" />
             <e p="Contact.cshtml" t="Include" />
+            <e p="FAQs.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+            <e p="Services.cshtml" t="Include" />
           </e>
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
@@ -107,20 +115,22 @@
             <e p="dashboard.min.css" t="Include" />
             <e p="datepicker.css" t="Include" />
             <e p="datepicker.min.css" t="Include" />
-            <e p="fontawesome-all.css" t="Include" />
-            <e p="fontawesome-all.min.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="site.min.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="images" t="Include">
-            <e p="banner1.svg" t="Include" />
-            <e p="banner2.svg" t="Include" />
-            <e p="banner3.svg" t="Include" />
-            <e p="banner4.svg" t="Include" />
-            <e p="fateema.jpeg" t="Include" />
-            <e p="home-layout.png" t="Include" />
-            <e p="strikethrough.svg" t="Include" />
+            <e p="analytics.svg" t="Include" />
+            <e p="brand.svg" t="Include" />
+            <e p="design.svg" t="Include" />
+            <e p="envelope.svg" t="Include" />
+            <e p="key.svg" t="Include" />
+            <e p="marketing.png" t="Include" />
+            <e p="marketing.svg" t="Include" />
+            <e p="mobile-alt.svg" t="Include" />
+            <e p="network.jpeg" t="Include" />
+            <e p="smart.jpg" t="Include" />
+            <e p="software.jpeg" t="Include" />
           </e>
           <e p="js" t="Include">
             <e p="datepicker.en.js" t="Include" />
@@ -193,72 +203,8 @@
             </e>
           </e>
           <e p="Uploads" t="Include">
-            <e p="03c5a856-125f-4771-932c-62e71e5afa21" t="Include">
-              <e p="IMG_9447.JPG" t="Include" />
-            </e>
-            <e p="048577a5-1b5f-42f0-80ed-7c004469d7bc" t="Include">
-              <e p="IMG_0316.JPG" t="Include" />
-            </e>
-            <e p="154245bc-82f9-4a13-ae97-fdd774fd3ae9" t="Include">
-              <e p="IMG_9499.JPG" t="Include" />
-            </e>
-            <e p="446d1636-6e69-47d1-8163-280dd7bdd79e" t="Include">
-              <e p="IMG_9322.JPG" t="Include" />
-            </e>
-            <e p="5b9ce8a8-fd49-492c-a078-b0f44ca945d2" t="Include">
-              <e p="IMG_0572.JPG" t="Include" />
-            </e>
             <e p="5e6a8663-a4f0-4450-b6b5-c0a2928f5d09" t="Include">
               <e p="IMG_E9360.JPG" t="Include" />
-            </e>
-            <e p="6c357625-027a-4095-bcb3-c23c13e60938" t="Include">
-              <e p="IMG_E9350.JPG" t="Include" />
-            </e>
-            <e p="7d700205-7b16-4514-94f3-0f2f4b13f80a" t="Include">
-              <e p="IMG_0572.JPG" t="Include" />
-            </e>
-            <e p="8563277f-c724-4895-8fca-8c6b47cbb515" t="Include">
-              <e p="IMG_E9358 (1).JPG" t="Include" />
-            </e>
-            <e p="93542341-e22f-45ed-be13-876a13aaa91b" t="Include">
-              <e p="IMG_E9389.JPG" t="Include" />
-            </e>
-            <e p="97046b12-2a69-4d36-b8c0-0fe99902df08" t="Include">
-              <e p="IMG_9268.PNG" t="Include" />
-              <e p="IMG_9391.JPG" t="Include" />
-              <e p="IMG_9433.JPG" t="Include" />
-              <e p="IMG_E9328 (1).JPG" t="Include" />
-              <e p="IMG_E9358 (1).JPG" t="Include" />
-              <e p="IMG_E9360.JPG" t="Include" />
-            </e>
-            <e p="abdul.benyusuf@gmail.com" t="Include">
-              <e p="WIN_20180126_11_18_23_Pro.jpg" t="Include" />
-            </e>
-            <e p="abdul.benyusuf@hotmail.com" t="Include">
-              <e p="IMG_9268.PNG" t="Include" />
-            </e>
-            <e p="abdul.benyusuf@outlook.comm" t="Include">
-              <e p="a7eca060-aa21-4134-8cff-c8b6b9c7ae6a.jpeg" t="Include" />
-              <e p="IMG_9445.JPG" t="Include" />
-            </e>
-            <e p="abdul.benyusuf@outlook.commmm" t="Include">
-              <e p="IMG_E9532 (2).JPG" t="Include" />
-            </e>
-            <e p="bc8f0f8e-1242-4fd7-8d7a-18bd6ae8a213" t="Include">
-              <e p="IMG_E9536.JPG" t="Include" />
-            </e>
-            <e p="exam@gmail.com" t="Include">
-              <e p="Abdullahi.jpeg" t="Include" />
-            </e>
-            <e p="jjthomas.aymtz@hotmail.com" t="Include">
-              <e p="Screenshot (4).png" t="Include" />
-            </e>
-            <e p="msalis@gmail.com" t="Include">
-              <e p="WIN_20171127_21_14_33_Pro.jpg" t="Include" />
-            </e>
-            <e p="umar@gmail.com" t="Include">
-              <e p="IMG_E9350.JPG" t="Include" />
-              <e p="IMG_E9357.JPG" t="Include" />
             </e>
           </e>
         </e>

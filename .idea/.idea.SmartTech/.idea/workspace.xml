@@ -4,29 +4,66 @@
     <bookmark url="file://$PROJECT_DIR$/SmartTech/wwwroot/css/site.css" line="19" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebf3bc35-00ac-4dac-b91f-05e1d7c5c03f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTech/Models/Admin/AdminEditViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTech/Models/Admin/AdminProfileViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" afterDir="false" />
+    <list default="true" id="ebf3bc35-00ac-4dac-b91f-05e1d7c5c03f" name="Default" comment="Role based authorization">
+      <change afterPath="$PROJECT_DIR$/SmartTech/Models/Account/AccountCreatedViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Models/Account/AccountNotActiveViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Account/AccessDenied.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Account/AccountCreated.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Account/AccountNotActive.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Home/Blog.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Home/FAQs.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/Views/Home/Services.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/wwwroot/images/marketing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/wwwroot/images/network.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/wwwroot/images/software.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/5e6a8663-a4f0-4450-b6b5-c0a2928f5d09/IMG_E9360.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartTech/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartTech/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SmartTech/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SmartTech/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTech/Models/Admin/DetailViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Models/Admin/DetailViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTech/Services/ApplicationUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Services/ApplicationUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Home/About.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Home/About.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Home/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Home/Contact.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/bundleconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/bundleconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/css/fontawesome-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/css/fontawesome-all.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/banner1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/banner2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/banner3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/banner4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/fateema.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/images/home-layout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/SmartTech/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/03c5a856-125f-4771-932c-62e71e5afa21/IMG_9447.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/446d1636-6e69-47d1-8163-280dd7bdd79e/IMG_9322.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/97046b12-2a69-4d36-b8c0-0fe99902df08/IMG_9268.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/97046b12-2a69-4d36-b8c0-0fe99902df08/IMG_9433.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/97046b12-2a69-4d36-b8c0-0fe99902df08/IMG_E9328 (1).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@gmail.com/WIN_20180126_11_18_23_Pro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@hotmail.com/IMG_9268.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@outlook.comm/IMG_9445.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@outlook.comm/a7eca060-aa21-4134-8cff-c8b6b9c7ae6a.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@outlook.commmm/IMG_E9532 (2).JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/exam@gmail.com/Abdullahi.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/jjthomas.aymtz@hotmail.com/Screenshot (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/msalis@gmail.com/WIN_20171127_21_14_33_Pro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/umar@gmail.com/IMG_E9350.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartTech/wwwroot/uploads/umar@gmail.com/IMG_E9357.JPG" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,406 +88,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AccountController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs">
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SmartTech/Startup.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="310" column="24" selection-start-line="310" selection-start-column="24" selection-end-line="310" selection-end-column="24" />
+            <state relative-caret-position="165">
+              <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
               <folding>
-                <marker date="1529968303140" expanded="false" signature="6:330" ph="..." />
-                <marker date="1529968303140" expanded="true" signature="363:12798" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="456:12796" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="1182:1432" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="1557:1604" ph="{...}" />
-                <marker date="1529968303140" expanded="false" signature="1789:5084" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="1912:5045" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="2019:2481" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="2649:3194" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="3219:3459" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="3307:3436" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="3613:4041" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="4218:4707" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="4732:4975" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="4823:4952" ph="{...}" />
-                <marker date="1529968303140" expanded="false" signature="5211:5258" ph="{...}" />
-                <marker date="1529968303140" expanded="false" signature="5434:7631" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="5595:5714" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="5824:7591" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="6065:6176" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="6201:6361" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="6565:7254" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="6801:7232" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="6856:7089" ph="/* This doesn't work -- var user = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Val ... */" />
-                <marker date="1529968303140" expanded="true" signature="7279:7391" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="7726:7846" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="7937:9606" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="8242:9562" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="9725:10458" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="9910:10402" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="10617:11555" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="11665:11866" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="12120:12790" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="12467:12553" ph="{...}" />
-                <marker date="1529968303140" expanded="true" signature="12664:12749" ph="{...}" />
+                <marker date="1530220576494" expanded="false" signature="6:471" ph="..." />
+                <marker date="1530220576494" expanded="true" signature="492:2842" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="519:2840" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="573:961" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="1188:1826" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="2050:2834" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="2211:2326" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="2343:2427" ph="{...}" />
+                <marker date="1530220576494" expanded="true" signature="2528:2702" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminProfile.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="772">
-              <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
-              <folding>
-                <marker date="1529963955882" expanded="true" signature="30:57" ph="@..." />
-                <marker date="1529963955882" expanded="true" signature="59:3374" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="92:3367" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="141:3355" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="314:3340" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="354:832" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="430:614" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="635:809" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="954:1800" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="992:1405" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="1426:1777" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="1975:2478" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2017:2187" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2237:2426" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2532:3321" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2570:3298" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2654:3246" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2700:2964" ph="&lt;div.../&gt;" />
-                <marker date="1529963955882" expanded="true" signature="2993:3215" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-              <folding>
-                <marker date="1529967585380" expanded="false" signature="6:260" ph="..." />
-                <marker date="1529967585380" expanded="true" signature="293:12096" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="374:12094" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="639:747" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="858:2550" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="1057:1319" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="1523:1785" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="1993:2255" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="2314:2495" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="2660:4282" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="2962:4239" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="4448:5847" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="4633:5791" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="6055:7493" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="7587:7788" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="7946:8858" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="8188:8815" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="9032:9731" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="9213:9675" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="9969:10913" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="11028:11225" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="11418:12088" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="11765:11851" ph="{...}" />
-                <marker date="1529967585380" expanded="true" signature="11962:12047" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edit.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="131" column="101" selection-start-line="131" selection-start-column="101" selection-end-line="131" selection-end-column="101" />
-              <folding>
-                <marker date="1529965168969" expanded="true" signature="47:5996" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="77:5007" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="126:4998" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="284:4987" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="314:4976" ph="&lt;form.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="504:1193" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="532:852" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="863:1178" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1203:2328" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1231:1765" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1368:1748" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1423:1562" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1777:2313" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1901:2296" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="1956:2092" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="2338:2631" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="2641:3722" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="2669:3140" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="2803:3069" ph="&lt;select.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="3151:3707" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="3292:3629" ph="&lt;select.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="3732:4546" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="3760:4124" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="4136:4531" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="4556:4848" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="5016:5988" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="5062:5979" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6001:6907" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6128:6900" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6175:6891" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6209:6476" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6319:6463" ph="&lt;button.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6483:6622" ph="&lt;div.../&gt;" />
-                <marker date="1529965168969" expanded="true" signature="6629:6880" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-              <folding>
-                <marker date="1529965372362" expanded="true" signature="23:50" ph="@..." />
-                <marker date="1529965372362" expanded="true" signature="52:431" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="79:424" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="116:413" ph="&lt;ul.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="433:1609" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="489:1602" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="536:1591" ph="&lt;table.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="596:955" ph="&lt;thead.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="636:934" ph="&lt;tr.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="968:1574" ph="&lt;tbody.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="988:1553" ph="@..." />
-                <marker date="1529965372362" expanded="true" signature="1033:1553" ph="{...}" />
-                <marker date="1529965372362" expanded="true" signature="1064:1538" ph="&lt;tr.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="1611:2785" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="1662:2778" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="1709:2767" ph="&lt;table.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="1769:2128" ph="&lt;thead.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="1809:2107" ph="&lt;tr.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2141:2750" ph="&lt;tbody.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2161:2729" ph="@..." />
-                <marker date="1529965372362" expanded="true" signature="2209:2729" ph="{...}" />
-                <marker date="1529965372362" expanded="true" signature="2240:2714" ph="&lt;tr.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2788:3943" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2840:3936" ph="&lt;div.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2887:3925" ph="&lt;table.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2947:3306" ph="&lt;thead.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="2987:3285" ph="&lt;tr.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="3319:3908" ph="&lt;tbody.../&gt;" />
-                <marker date="1529965372362" expanded="true" signature="3339:3887" ph="@..." />
-                <marker date="1529965372362" expanded="true" signature="3388:3887" ph="{...}" />
-                <marker date="1529965372362" expanded="true" signature="3419:3872" ph="&lt;tr.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
-              <folding>
-                <marker date="1529971851258" expanded="true" signature="23:67" ph="@..." />
-                <marker date="1529971851258" expanded="true" signature="74:2228" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="129:2217" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="283:2205" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="319:2190" ph="&lt;form.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="478:993" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="614:768" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1012:1520" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1149:1298" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1538:2026" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1587:1874" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1631:1846" ph="&lt;div.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1682:1815" ph="&lt;label.../&gt;" />
-                <marker date="1529971851258" expanded="true" signature="1895:2003" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_Layout.cshtml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
-              <folding>
-                <marker date="1529973078140" expanded="true" signature="23:1511" ph="&lt;head.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="205:518" ph="&lt;environment.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="523:1503" ph="&lt;environment.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="572:861" ph="&lt;link.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="2462:2708" ph="&lt;div.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="2521:2696" ph="&lt;footer.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="2570:2682" ph="&lt;div.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="2710:3048" ph="&lt;environment.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="3049:4193" ph="&lt;environment.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="3094:3417" ph="&lt;script.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="3422:3656" ph="&lt;script.../&gt;" />
-                <marker date="1529973078140" expanded="true" signature="3661:4056" ph="&lt;script.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Layout.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="35" column="87" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
-              <folding>
-                <marker date="1529972757436" expanded="true" signature="66:7248" ph="&lt;html.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="73:1571" ph="&lt;head.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="255:573" ph="&lt;environment.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="578:1563" ph="&lt;environment.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="627:916" ph="&lt;link.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="1572:7240" ph="&lt;body.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="1582:2138" ph="&lt;nav.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="1943:2127" ph="&lt;ul.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="1980:2115" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2140:4745" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2172:4738" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2194:4353" ph="&lt;nav.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2258:4342" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2295:2454" ph="&lt;h6.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2463:3375" ph="&lt;ul.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2502:2701" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2536:2685" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2712:2837" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2746:2821" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2848:2966" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2882:2950" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="2977:3099" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3011:3083" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3110:3228" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3144:3212" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3239:3361" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3273:3345" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3385:3541" ph="&lt;h6.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3550:4329" ph="&lt;ul.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3594:3773" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3628:3757" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3784:3965" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3818:3949" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="3976:4148" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4010:4132" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4159:4315" ph="&lt;li.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4193:4299" ph="&lt;a.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4359:4729" ph="&lt;main.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4438:4707" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4511:4694" ph="&lt;footer.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4562:4676" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4747:5700" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4874:5693" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4921:5684" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="4955:5236" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="5079:5223" ph="&lt;button.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="5243:5391" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="5398:5673" ph="&lt;div.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="5705:6043" ph="&lt;environment.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="6044:7188" ph="&lt;environment.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="6089:6412" ph="&lt;script.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="6417:6651" ph="&lt;script.../&gt;" />
-                <marker date="1529972757436" expanded="true" signature="6656:7051" ph="&lt;script.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edit.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="755">
-              <caret line="153" column="113" selection-start-line="153" selection-start-column="113" selection-end-line="153" selection-end-column="113" />
-              <folding>
-                <marker date="1529873307153" expanded="true" signature="45:72" ph="@..." />
-                <marker date="1529873307153" expanded="true" signature="107:11657" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="156:11645" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="330:11630" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="386:11577" ph="&lt;form.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="594:1393" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="632:992" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="1013:1368" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="1425:2772" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="1463:2087" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="1620:2060" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="1685:1844" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="2121:2747" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="2265:2720" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="2330:2486" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="2804:3137" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="3169:4450" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="3207:3758" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="3361:3667" ph="&lt;select.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="3779:4425" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="3940:4327" ph="&lt;select.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="4481:5431" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="4518:4918" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="4951:5407" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="5508:5751" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="5787:7378" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="5824:6928" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="5980:6835" ph="&lt;select.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="6968:7354" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="7122:7263" ph="&lt;select.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="7414:7732" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="7768:8093" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="8147:9044" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="8184:8585" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="8618:9020" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="9166:10500" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="9203:9479" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="9499:9602" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="9635:9915" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="9935:10039" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="10079:10354" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="10374:10476" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="10536:11408" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="10573:10998" ph="&lt;div.../&gt;" />
-                <marker date="1529873307153" expanded="true" signature="11031:11384" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile.cshtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="88" column="109" selection-start-line="88" selection-start-column="109" selection-end-line="88" selection-end-column="109" />
-              <folding>
-                <marker date="1529965133124" expanded="true" signature="26:5065" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="330:5058" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="361:3985" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="415:3970" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="592:3951" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="636:1142" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="716:908" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="933:1115" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="1276:2258" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="1318:1751" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="1776:2231" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="2279:3928" ph="@..." />
-                <marker date="1529965133124" expanded="true" signature="2298:3928" ph="{...}" />
-                <marker date="1529965133124" expanded="true" signature="2493:3906" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="2539:3149" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="3178:3875" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="3994:5047" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="4048:5032" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5068:6080" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5197:6073" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5248:6062" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5288:5595" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5414:5576" ph="&lt;button.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5608:5761" ph="&lt;div.../&gt;" />
-                <marker date="1529965133124" expanded="true" signature="5774:6047" ph="&lt;div.../&gt;" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="IMG_E9360.JPG" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/5e6a8663-a4f0-4450-b6b5-c0a2928f5d09/IMG_E9360.JPG">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -490,35 +150,25 @@
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Admin/AdminProfileViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Admin/AdminEditViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccessDenied.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Admin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccountCreated.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/AccountCreatedViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccountNotActive.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/AccountNotActiveViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Migrations/20180618025435_Initial.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Employee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Services/ApplicationUserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/EditViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Migrations/20180618035211_Second.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/ProfileViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/Services.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/FAQs.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/Blog.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/Contact.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE7DC93C-61EB-476C-A070-C0BBD12F30D4/2a/0c9c248c/IdentityEntityFrameworkBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/RegisterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/7a/2c200ade/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Admin/IndexViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Admin/IndexListingViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/d7/7c55e4b1/RedirectToActionResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Startup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml" root0="FORCE_HIGHLIGHTING" />
@@ -526,20 +176,32 @@
     <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Models/Admin/EditViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Data/ApplicationContext.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SmartTech/Data/Entities/ApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Admin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Migrations/20180618025435_Initial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Employee.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Services/ApplicationUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Migrations/20180618035211_Second.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/ProfileViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Models/Account/RegisterViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/7a/2c200ade/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Views/Home/About.cshtml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/d7/7c55e4b1/RedirectToActionResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SmartTech/bower.json" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Data/Entities/Admin.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/appsettings.json" />
-        <option value="$PROJECT_DIR$/SmartTech/Data/ApplicationContext.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Data/Entities/Employee.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Models/Account/Login.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Models/Account/Register.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Views/Account/LoginLayout.cshtml" />
         <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/signin.min.css" />
         <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/signin.css" />
@@ -554,29 +216,43 @@
         <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.min.css" />
         <option value="$PROJECT_DIR$/SmartTech/Models/Account/EditViewModel.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Models/Admin/EditViewModel.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/wwwroot/js/site.js" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/site.css" />
         <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.css" />
         <option value="$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Startup.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Models/Admin/DetailViewModel.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Models/Admin/AdminProfileViewModel.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Models/Admin/AdminEditViewModel.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Services/ApplicationUserService.cs" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" />
         <option value="$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Models/Account/AccountCreatedViewModel.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Models/Account/AccountNotActive.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Models/Account/AccountNotActiveViewModel.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Startup.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/bundleconfig.json" />
+        <option value="$PROJECT_DIR$/SmartTech/wwwroot/js/site.js" />
         <option value="$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/Contact.cshtml" />
         <option value="$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml" />
-        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/About.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs" />
         <option value="$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/wwwroot/css/site.css" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/AccessDenied.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/AccountCreated.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/AccountNotActive.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/Blog.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/FAQs.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Home/Services.cshtml" />
+        <option value="$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml" />
       </list>
     </option>
   </component>
@@ -629,14 +305,22 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="SmartTech (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="SmartTech" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Views" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="wwwroot" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="SmartTech (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="SmartTech" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Views" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="Admin" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="wwwroot" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="uploads" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="SmartTech (1 project)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="SmartTech" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="wwwroot" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="uploads" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="5e6a8663-a4f0-4450-b6b5-c0a2928f5d09" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -701,7 +385,8 @@
       <workItem from="1529427591646" duration="143450000" />
       <workItem from="1529877391308" duration="923000" />
       <workItem from="1529878395483" duration="33680000" />
-      <workItem from="1529953432938" duration="11778000" />
+      <workItem from="1529953432938" duration="28865000" />
+      <workItem from="1530102103718" duration="40426000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1529256333863</created>
@@ -731,11 +416,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529890649138</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Role based authorization">
+      <created>1529973418780</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529973418780</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280236000" />
+    <option name="totallyTimeSpent" value="337749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,22 +443,22 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.3260212" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50226927" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="REST Client" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.16336633" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" weight="0.16336633" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49546143" weight="0.32838285" />
       <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.4977307" weight="0.32838285" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22995462" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21104388" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49924356" weight="0.32838285" />
-      <window_info anchor="right" id="Database" order="4" weight="0.14069591" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.016641453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -780,12 +472,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2708018" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4977307" visible="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Unit Tests" order="10" />
       <window_info anchor="bottom" id="REST Client" order="11" />
@@ -795,7 +487,7 @@
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49546143" weight="0.32838285" />
       <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50226927" side_tool="true" weight="0.32838285" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Build" order="14" sideWeight="0.49924356" weight="0.32838285" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" visible="true" weight="0.14069591" />
@@ -812,14 +504,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Developing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Developing" />
+    <MESSAGE value="Role based authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Role based authorization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml</url>
-          <line>48</line>
+          <line>49</line>
           <properties documentPath="$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml" initialLine="46">
             <startOffsets>
               <startOffset value="-1" />
@@ -834,182 +527,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@gmail.com/WIN_20180126_11_18_23_Pro.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Admin.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/msalis@gmail.com/WIN_20171127_21_14_33_Pro.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/signin.min.css" />
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/site.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/signin.css" />
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/LoginLayout.cshtml" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/d7/7c55e4b1/RedirectToActionResult.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="14" column="88" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/05B3544D-433B-441D-BE53-24AB9E34B8FE/7a/2c200ade/ControllerBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="461" column="42" selection-start-line="461" selection-start-column="42" selection-end-line="461" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/umar@gmail.com/IMG_E9350.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/umar@gmail.com/IMG_E9357.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Account/LoginViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@outlook.commmm/IMG_E9532 (2).JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Account/RegisterViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Employee.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="32" column="57" selection-start-line="7" selection-start-column="8" selection-end-line="32" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/ApplicationUser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/97046b12-2a69-4d36-b8c0-0fe99902df08/IMG_9433.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/03c5a856-125f-4771-932c-62e71e5afa21/IMG_9447.JPG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/97046b12-2a69-4d36-b8c0-0fe99902df08/IMG_9268.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Admin/IndexViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="80" selection-start-line="10" selection-start-column="80" selection-end-line="10" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/_ViewImports.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Admin/IndexListingViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Account/ProfileViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="55" column="57" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="55" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/abdul.benyusuf@hotmail.com/IMG_9268.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/js/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2850">
-          <caret line="190" column="7" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="137" column="10" selection-start-line="137" selection-start-column="10" selection-end-line="137" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Startup.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="54" column="115" selection-start-line="54" selection-start-column="115" selection-end-line="54" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Admin/DetailViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="55" column="57" selection-start-line="6" selection-start-column="8" selection-end-line="55" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Admin/EditViewModel.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="34" column="49" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="34" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SmartTech/Models/Admin/AdminEditViewModel.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1028,21 +545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="49" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <marker date="1529934594720" expanded="true" signature="88:720" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding>
-            <marker date="1529955325015" expanded="false" signature="6:167" ph="..." />
-            <marker date="1529955325015" expanded="true" signature="193:1937" ph="{...}" />
-            <marker date="1529955325015" expanded="true" signature="233:1935" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1050,503 +552,867 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="231" column="46" selection-start-line="231" selection-start-column="46" selection-end-line="231" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Account/AccountNotActiveViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
           <folding>
-            <marker date="1529955531381" expanded="true" signature="6:186" ph="..." />
-            <marker date="1529955531381" expanded="true" signature="216:7382" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="277:7380" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="404:456" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="520:579" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="645:725" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="792:881" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="936:1034" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1095:1199" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1251:1345" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1403:1500" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1547:1656" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1702:1810" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="1852:2028" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2071:2176" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2225:2336" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2386:2495" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2539:2645" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2696:2809" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="2864:2981" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="3026:3133" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="3184:3427" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="3479:3666" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="3724:3967" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="4037:4340" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="4407:4697" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="4754:4995" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="5053:5298" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="5354:5591" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="5657:5770" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="5834:5945" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6001:6104" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6158:6259" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6318:6543" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6601:6698" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6759:6874" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="6935:7050" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="7102:7212" ph="{...}" />
-            <marker date="1529955531381" expanded="true" signature="7264:7374" ph="{...}" />
+            <marker date="1530119841858" expanded="true" signature="34:185" ph="{...}" />
+            <marker date="1530119841858" expanded="true" signature="79:183" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/banner3.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/banner4.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/banner2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/banner1.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/home-layout.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="69" column="140" selection-start-line="69" selection-start-column="94" selection-end-line="69" selection-end-column="140" />
+        <state>
           <folding>
-            <marker date="1529953765971" expanded="true" signature="24:51" ph="@..." />
-            <marker date="1529953765971" expanded="true" signature="53:4335" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="86:4328" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="135:4316" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="304:4301" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="344:822" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="420:604" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="625:799" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="944:1874" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="982:1395" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="1416:1851" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="1891:3457" ph="@..." />
-            <marker date="1529953765971" expanded="true" signature="1910:3457" ph="{...}" />
-            <marker date="1529953765971" expanded="true" signature="2086:3439" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="2128:2714" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="2739:3412" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="3496:4282" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="3534:4259" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="3618:4207" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="3664:3924" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="3953:4176" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4343:5355" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4472:5348" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4523:5337" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4563:4871" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4690:4852" ph="&lt;button.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="4884:5036" ph="&lt;div.../&gt;" />
-            <marker date="1529953765971" expanded="true" signature="5049:5322" ph="&lt;div.../&gt;" />
+            <marker date="1529255131201" expanded="false" signature="6:149" ph="..." />
+            <marker date="1529255131201" expanded="true" signature="170:544" ph="{...}" />
+            <marker date="1529255131201" expanded="true" signature="197:542" ph="{...}" />
+            <marker date="1529255131201" expanded="true" signature="250:536" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/bundleconfig.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="100" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+        <state relative-caret-position="210">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/_ViewImports.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <marker date="1529944415755" expanded="true" signature="27:54" ph="@..." />
-            <marker date="1529944415755" expanded="true" signature="56:5112" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="89:5105" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="138:5093" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="311:5078" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="360:5025" ph="&lt;form.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="553:1242" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="581:901" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="912:1227" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1252:2377" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1280:1814" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1417:1797" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1472:1611" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1826:2362" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="1950:2345" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="2005:2141" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="2387:2680" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="2690:3771" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="2718:3189" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="2852:3118" ph="&lt;select.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="3200:3756" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="3341:3678" ph="&lt;select.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="3781:4595" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="3809:4173" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="4185:4580" ph="&lt;div.../&gt;" />
-            <marker date="1529944415755" expanded="true" signature="4605:4897" ph="&lt;div.../&gt;" />
+            <marker date="1529711664505" expanded="true" signature="7:203" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/_ViewStart.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="755">
-          <caret line="153" column="113" selection-start-line="153" selection-start-column="113" selection-end-line="153" selection-end-column="113" />
+        <state>
           <folding>
-            <marker date="1529873307153" expanded="true" signature="45:72" ph="@..." />
-            <marker date="1529873307153" expanded="true" signature="107:11657" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="156:11645" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="330:11630" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="386:11577" ph="&lt;form.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="594:1393" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="632:992" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="1013:1368" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="1425:2772" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="1463:2087" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="1620:2060" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="1685:1844" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="2121:2747" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="2265:2720" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="2330:2486" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="2804:3137" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="3169:4450" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="3207:3758" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="3361:3667" ph="&lt;select.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="3779:4425" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="3940:4327" ph="&lt;select.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="4481:5431" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="4518:4918" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="4951:5407" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="5508:5751" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="5787:7378" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="5824:6928" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="5980:6835" ph="&lt;select.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="6968:7354" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="7122:7263" ph="&lt;select.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="7414:7732" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="7768:8093" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="8147:9044" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="8184:8585" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="8618:9020" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="9166:10500" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="9203:9479" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="9499:9602" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="9635:9915" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="9935:10039" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="10079:10354" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="10374:10476" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="10536:11408" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="10573:10998" ph="&lt;div.../&gt;" />
-            <marker date="1529873307153" expanded="true" signature="11031:11384" ph="&lt;div.../&gt;" />
+            <marker date="1529255069051" expanded="true" signature="0:28" ph="@..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
-          <folding>
-            <marker date="1529963955882" expanded="true" signature="30:57" ph="@..." />
-            <marker date="1529963955882" expanded="true" signature="59:3374" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="92:3367" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="141:3355" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="314:3340" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="354:832" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="430:614" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="635:809" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="954:1800" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="992:1405" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="1426:1777" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="1975:2478" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2017:2187" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2237:2426" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2532:3321" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2570:3298" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2654:3246" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2700:2964" ph="&lt;div.../&gt;" />
-            <marker date="1529963955882" expanded="true" signature="2993:3215" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/marketing.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/js/site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="88" column="109" selection-start-line="88" selection-start-column="109" selection-end-line="88" selection-end-column="109" />
-          <folding>
-            <marker date="1529965133124" expanded="true" signature="26:5065" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="330:5058" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="361:3985" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="415:3970" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="592:3951" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="636:1142" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="716:908" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="933:1115" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="1276:2258" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="1318:1751" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="1776:2231" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="2279:3928" ph="@..." />
-            <marker date="1529965133124" expanded="true" signature="2298:3928" ph="{...}" />
-            <marker date="1529965133124" expanded="true" signature="2493:3906" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="2539:3149" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="3178:3875" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="3994:5047" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="4048:5032" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5068:6080" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5197:6073" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5248:6062" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5288:5595" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5414:5576" ph="&lt;button.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5608:5761" ph="&lt;div.../&gt;" />
-            <marker date="1529965133124" expanded="true" signature="5774:6047" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="131" column="101" selection-start-line="131" selection-start-column="101" selection-end-line="131" selection-end-column="101" />
-          <folding>
-            <marker date="1529965168969" expanded="true" signature="47:5996" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="77:5007" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="126:4998" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="284:4987" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="314:4976" ph="&lt;form.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="504:1193" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="532:852" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="863:1178" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1203:2328" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1231:1765" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1368:1748" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1423:1562" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1777:2313" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1901:2296" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="1956:2092" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="2338:2631" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="2641:3722" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="2669:3140" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="2803:3069" ph="&lt;select.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="3151:3707" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="3292:3629" ph="&lt;select.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="3732:4546" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="3760:4124" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="4136:4531" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="4556:4848" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="5016:5988" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="5062:5979" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6001:6907" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6128:6900" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6175:6891" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6209:6476" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6319:6463" ph="&lt;button.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6483:6622" ph="&lt;div.../&gt;" />
-            <marker date="1529965168969" expanded="true" signature="6629:6880" ph="&lt;div.../&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
-          <folding>
-            <marker date="1529965372362" expanded="true" signature="23:50" ph="@..." />
-            <marker date="1529965372362" expanded="true" signature="52:431" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="79:424" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="116:413" ph="&lt;ul.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="433:1609" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="489:1602" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="536:1591" ph="&lt;table.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="596:955" ph="&lt;thead.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="636:934" ph="&lt;tr.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="968:1574" ph="&lt;tbody.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="988:1553" ph="@..." />
-            <marker date="1529965372362" expanded="true" signature="1033:1553" ph="{...}" />
-            <marker date="1529965372362" expanded="true" signature="1064:1538" ph="&lt;tr.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="1611:2785" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="1662:2778" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="1709:2767" ph="&lt;table.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="1769:2128" ph="&lt;thead.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="1809:2107" ph="&lt;tr.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2141:2750" ph="&lt;tbody.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2161:2729" ph="@..." />
-            <marker date="1529965372362" expanded="true" signature="2209:2729" ph="{...}" />
-            <marker date="1529965372362" expanded="true" signature="2240:2714" ph="&lt;tr.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2788:3943" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2840:3936" ph="&lt;div.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2887:3925" ph="&lt;table.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2947:3306" ph="&lt;thead.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="2987:3285" ph="&lt;tr.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="3319:3908" ph="&lt;tbody.../&gt;" />
-            <marker date="1529965372362" expanded="true" signature="3339:3887" ph="@..." />
-            <marker date="1529965372362" expanded="true" signature="3388:3887" ph="{...}" />
-            <marker date="1529965372362" expanded="true" signature="3419:3872" ph="&lt;tr.../&gt;" />
-          </folding>
+        <state relative-caret-position="2325">
+          <caret line="155" column="82" selection-start-line="155" selection-start-column="82" selection-end-line="155" selection-end-column="82" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/AdminController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding>
-            <marker date="1529967585380" expanded="false" signature="6:260" ph="..." />
-            <marker date="1529967585380" expanded="true" signature="293:12096" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="374:12094" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="639:747" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="858:2550" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="1057:1319" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="1523:1785" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="1993:2255" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="2314:2495" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="2660:4282" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="2962:4239" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="4448:5847" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="4633:5791" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="6055:7493" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="7587:7788" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="7946:8858" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="8188:8815" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="9032:9731" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="9213:9675" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="9969:10913" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="11028:11225" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="11418:12088" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="11765:11851" ph="{...}" />
-            <marker date="1529967585380" expanded="true" signature="11962:12047" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="6:260" ph="..." />
+            <marker date="1530093744987" expanded="true" signature="293:12093" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="374:12091" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="639:747" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="858:2550" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="1057:1319" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="1523:1785" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="1993:2255" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="2314:2495" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="2660:4282" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="2962:4239" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="4448:5847" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="4633:5791" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="6052:7490" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="7584:7785" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="7943:8855" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="8185:8812" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="9029:9728" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="9210:9672" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="9966:10910" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="11025:11222" ph="{...}" />
+            <marker date="1530093744987" expanded="false" signature="11415:12085" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="11762:11848" ph="{...}" />
+            <marker date="1530093744987" expanded="true" signature="11959:12044" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Models/Account/AccountCreatedViewModel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <marker date="1530117537166" expanded="true" signature="34:183" ph="{...}" />
+            <marker date="1530117537166" expanded="true" signature="77:181" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Employee.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+          <folding>
+            <marker date="1529431121507" expanded="false" signature="6:58" ph="..." />
+            <marker date="1529431121507" expanded="true" signature="93:1061" ph="{...}" />
+            <marker date="1529431121507" expanded="true" signature="138:1059" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/ApplicationUser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <marker date="1529784608197" expanded="false" signature="6:148" ph="..." />
+            <marker date="1529784608197" expanded="true" signature="183:1001" ph="{...}" />
+            <marker date="1529784608197" expanded="true" signature="241:999" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Data/Entities/Admin.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+          <folding>
+            <marker date="1529290391326" expanded="true" signature="33:139" ph="{...}" />
+            <marker date="1529290391326" expanded="true" signature="75:137" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Data/ApplicationContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <marker date="1529406319585" expanded="false" signature="6:124" ph="..." />
+            <marker date="1529406319585" expanded="true" signature="150:893" ph="{...}" />
+            <marker date="1529406319585" expanded="true" signature="224:891" ph="{...}" />
+            <marker date="1529406319585" expanded="true" signature="266:299" ph="{...}" />
+            <marker date="1529406319585" expanded="true" signature="375:408" ph="{...}" />
+            <marker date="1529406319585" expanded="true" signature="503:694" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Data/IApplicationUser.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <marker date="1530373681091" expanded="true" signature="6:108" ph="..." />
+            <marker date="1530373681091" expanded="true" signature="134:1878" ph="{...}" />
+            <marker date="1530373681091" expanded="true" signature="174:1876" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/AccountController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="310" column="24" selection-start-line="310" selection-start-column="24" selection-end-line="310" selection-end-column="24" />
+        <state relative-caret-position="3075">
+          <caret line="205" column="28" selection-start-line="205" selection-start-column="28" selection-end-line="205" selection-end-column="28" />
           <folding>
-            <marker date="1529968303140" expanded="false" signature="6:330" ph="..." />
-            <marker date="1529968303140" expanded="true" signature="363:12798" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="456:12796" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="1182:1432" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="1557:1604" ph="{...}" />
-            <marker date="1529968303140" expanded="false" signature="1789:5084" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="1912:5045" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="2019:2481" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="2649:3194" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="3219:3459" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="3307:3436" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="3613:4041" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="4218:4707" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="4732:4975" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="4823:4952" ph="{...}" />
-            <marker date="1529968303140" expanded="false" signature="5211:5258" ph="{...}" />
-            <marker date="1529968303140" expanded="false" signature="5434:7631" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="5595:5714" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="5824:7591" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="6065:6176" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="6201:6361" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="6565:7254" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="6801:7232" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="6856:7089" ph="/* This doesn't work -- var user = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Val ... */" />
-            <marker date="1529968303140" expanded="true" signature="7279:7391" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="7726:7846" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="7937:9606" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="8242:9562" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="9725:10458" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="9910:10402" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="10617:11555" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="11665:11866" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="12120:12790" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="12467:12553" ph="{...}" />
-            <marker date="1529968303140" expanded="true" signature="12664:12749" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6:330" ph="..." />
+            <marker date="1530373488265" expanded="true" signature="363:14044" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="456:14042" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="1182:1432" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="1557:1604" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="1789:5142" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="1912:5103" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="2019:2481" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="2649:3194" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="3219:3459" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="3307:3436" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="3613:4041" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="4218:4765" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="4790:5033" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="4881:5010" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="5269:5316" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="5492:7953" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="5653:5772" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="5882:7907" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6123:6234" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6259:6419" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6420:6452" ph="/* break; ... */" />
+            <marker date="1530373488265" expanded="true" signature="6629:7494" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6865:7296" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="6920:7153" ph="/* This doesn't work -- var user = _httpContextAccessor.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Val ... */" />
+            <marker date="1530373488265" expanded="true" signature="7519:7701" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="7702:7734" ph="/* break; ... */" />
+            <marker date="1530373488265" expanded="true" signature="7909:7943" ph="/* return View(vm); ... */" />
+            <marker date="1530373488265" expanded="true" signature="8048:8168" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="8259:9928" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="8564:9884" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="10047:10780" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="10232:10724" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="10939:11877" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="11987:12188" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="12314:12361" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="12533:12742" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="12608:12698" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="12928:13139" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="13005:13095" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="13366:14036" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="13713:13799" ph="{...}" />
+            <marker date="1530373488265" expanded="true" signature="13910:13995" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/Controllers/HomeController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="20" column="93" selection-start-line="20" selection-start-column="93" selection-end-line="20" selection-end-column="93" />
+        <state relative-caret-position="452">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
-            <marker date="1529971851258" expanded="true" signature="23:67" ph="@..." />
-            <marker date="1529971851258" expanded="true" signature="74:2228" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="129:2217" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="283:2205" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="319:2190" ph="&lt;form.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="478:993" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="614:768" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1012:1520" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1149:1298" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1538:2026" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1587:1874" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1631:1846" ph="&lt;div.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1682:1815" ph="&lt;label.../&gt;" />
-            <marker date="1529971851258" expanded="true" signature="1895:2003" ph="&lt;div.../&gt;" />
+            <marker date="1530379439638" expanded="true" signature="64:722" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="111:720" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="154:201" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="239:286" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="326:373" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="411:458" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="499:546" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="583:630" ph="{...}" />
+            <marker date="1530379439638" expanded="true" signature="667:714" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml">
+    <entry file="file://$PROJECT_DIR$/SmartTech/Configuration/ApplicationUserRoleSeed.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="35" column="87" selection-start-line="35" selection-start-column="87" selection-end-line="35" selection-end-column="87" />
+        <state relative-caret-position="150">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding>
-            <marker date="1529972757436" expanded="true" signature="66:7248" ph="&lt;html.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="73:1571" ph="&lt;head.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="255:573" ph="&lt;environment.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="578:1563" ph="&lt;environment.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="627:916" ph="&lt;link.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="1572:7240" ph="&lt;body.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="1582:2138" ph="&lt;nav.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="1943:2127" ph="&lt;ul.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="1980:2115" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2140:4745" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2172:4738" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2194:4353" ph="&lt;nav.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2258:4342" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2295:2454" ph="&lt;h6.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2463:3375" ph="&lt;ul.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2502:2701" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2536:2685" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2712:2837" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2746:2821" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2848:2966" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2882:2950" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="2977:3099" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3011:3083" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3110:3228" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3144:3212" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3239:3361" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3273:3345" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3385:3541" ph="&lt;h6.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3550:4329" ph="&lt;ul.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3594:3773" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3628:3757" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3784:3965" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3818:3949" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="3976:4148" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4010:4132" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4159:4315" ph="&lt;li.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4193:4299" ph="&lt;a.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4359:4729" ph="&lt;main.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4438:4707" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4511:4694" ph="&lt;footer.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4562:4676" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4747:5700" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4874:5693" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4921:5684" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="4955:5236" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="5079:5223" ph="&lt;button.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="5243:5391" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="5398:5673" ph="&lt;div.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="5705:6043" ph="&lt;environment.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="6044:7188" ph="&lt;environment.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="6089:6412" ph="&lt;script.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="6417:6651" ph="&lt;script.../&gt;" />
-            <marker date="1529972757436" expanded="true" signature="6656:7051" ph="&lt;script.../&gt;" />
+            <marker date="1529927112881" expanded="false" signature="6:123" ph="..." />
+            <marker date="1529927112881" expanded="true" signature="158:953" ph="{...}" />
+            <marker date="1529927112881" expanded="true" signature="201:951" ph="{...}" />
+            <marker date="1529927112881" expanded="true" signature="351:411" ph="{...}" />
+            <marker date="1529927112881" expanded="true" signature="540:945" ph="{...}" />
+            <marker date="1529927112881" expanded="true" signature="624:739" ph="{...}" />
+            <marker date="1529927112881" expanded="true" signature="823:935" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/images/software.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/css/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/About.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <marker date="1530379070467" expanded="true" signature="0:37" ph="@..." />
+            <marker date="1530379070467" expanded="true" signature="39:199" ph="&lt;div.../&gt;" />
+            <marker date="1530379070467" expanded="true" signature="72:192" ph="&lt;div.../&gt;" />
+            <marker date="1530379070467" expanded="true" signature="98:181" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/Contact.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="82" column="45" selection-start-line="82" selection-start-column="45" selection-end-line="82" selection-end-column="45" />
+          <folding>
+            <marker date="1530378592903" expanded="true" signature="0:39" ph="@..." />
+            <marker date="1530378592903" expanded="true" signature="41:4189" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="84:4182" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="110:1456" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="145:1441" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="320:1422" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="463:1399" ph="&lt;form.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="495:695" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="745:952" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="977:1191" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1216:1371" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1465:4171" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1500:2960" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1539:2941" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1580:2918" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1779:2891" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="1910:2078" ph="&lt;p.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="2217:2390" ph="&lt;p.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="2530:2860" ph="&lt;p.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="2986:4156" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="3020:4137" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="3061:4114" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="3258:4087" ph="&lt;div.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="3384:3787" ph="&lt;p.../&gt;" />
+            <marker date="1530378592903" expanded="true" signature="3923:4056" ph="&lt;p.../&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SmartTech/Views/Shared/_Layout.cshtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        <state relative-caret-position="75">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="49" />
           <folding>
-            <marker date="1529973078140" expanded="true" signature="23:1511" ph="&lt;head.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="205:518" ph="&lt;environment.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="523:1503" ph="&lt;environment.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="572:861" ph="&lt;link.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="2462:2708" ph="&lt;div.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="2521:2696" ph="&lt;footer.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="2570:2682" ph="&lt;div.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="2710:3048" ph="&lt;environment.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="3049:4193" ph="&lt;environment.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="3094:3417" ph="&lt;script.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="3422:3656" ph="&lt;script.../&gt;" />
-            <marker date="1529973078140" expanded="true" signature="3661:4056" ph="&lt;script.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="16:4031" ph="&lt;html.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="23:1147" ph="&lt;head.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="205:452" ph="&lt;environment.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="457:1139" ph="&lt;environment.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="1148:4023" ph="&lt;body.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="1156:2265" ph="&lt;nav.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="1220:2258" ph="&lt;div.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="1307:1459" ph="&lt;a.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="2297:2480" ph="&lt;footer.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="2354:2466" ph="&lt;div.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="2488:2826" ph="&lt;environment.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="2827:3971" ph="&lt;environment.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="2872:3195" ph="&lt;script.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="3200:3434" ph="&lt;script.../&gt;" />
+            <marker date="1530379566894" expanded="true" signature="3439:3834" ph="&lt;script.../&gt;" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminEdit.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding>
+            <marker date="1530400408674" expanded="true" signature="92:5218" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="125:5211" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="174:5199" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="347:5184" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="396:5131" ph="&lt;form.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="589:1278" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="617:937" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="948:1263" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="1288:2478" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="1316:1880" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="1453:1863" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="1508:1677" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="1892:2463" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2016:2446" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2071:2242" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2488:2781" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2791:3872" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2819:3290" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="2953:3219" ph="&lt;select.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="3301:3857" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="3442:3779" ph="&lt;select.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="3882:4696" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="3910:4274" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="4286:4681" ph="&lt;div.../&gt;" />
+            <marker date="1530400408674" expanded="true" signature="4706:5003" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/AdminProfile.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1530400417982" expanded="true" signature="96:3412" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="129:3405" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="178:3393" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="351:3378" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="391:869" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="467:651" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="672:846" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="991:1837" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="1029:1442" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="1463:1814" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2013:2516" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2055:2225" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2275:2464" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2570:3359" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2608:3336" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2692:3284" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="2738:3002" ph="&lt;div.../&gt;" />
+            <marker date="1530400417982" expanded="true" signature="3031:3253" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Detail.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1530400429567" expanded="true" signature="90:4372" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="123:4365" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="172:4353" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="341:4338" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="381:859" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="457:641" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="662:836" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="981:1911" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="1019:1432" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="1453:1888" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="1928:3494" ph="@..." />
+            <marker date="1530400429567" expanded="true" signature="1947:3494" ph="{...}" />
+            <marker date="1530400429567" expanded="true" signature="2123:3476" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="2165:2751" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="2776:3449" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="3533:4319" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="3571:4296" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="3655:4244" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="3701:3961" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="3990:4213" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4380:5392" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4509:5385" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4560:5374" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4600:4908" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4727:4889" ph="&lt;button.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="4921:5073" ph="&lt;div.../&gt;" />
+            <marker date="1530400429567" expanded="true" signature="5086:5359" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Edit.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <marker date="1530400441862" expanded="true" signature="45:98" ph="@..." />
+            <marker date="1530400441862" expanded="true" signature="620:1419" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="658:1018" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="1039:1394" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="1489:2143" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="1646:2116" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="1711:1900" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="2895:3228" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="3260:4541" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="3298:3849" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="3452:3758" ph="&lt;select.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="3870:4516" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="4031:4418" ph="&lt;select.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="4572:5522" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="4609:5009" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="5042:5498" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="5599:5842" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="5878:7469" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="5915:7019" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="6071:6926" ph="&lt;select.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="7059:7445" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="7213:7354" ph="&lt;select.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="7505:7823" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="7859:8184" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="8238:9135" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="8275:8676" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="8709:9111" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="9257:10591" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="9294:9570" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="9590:9693" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="9726:10006" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="10026:10130" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="10170:10445" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="10465:10567" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="10627:11499" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="10664:11089" ph="&lt;div.../&gt;" />
+            <marker date="1530400441862" expanded="true" signature="11122:11475" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1530400364266" expanded="true" signature="23:85" ph="@..." />
+            <marker date="1530400364266" expanded="true" signature="87:466" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="114:459" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="151:448" ph="&lt;ul.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="468:1649" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="524:1642" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="576:1631" ph="&lt;table.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="636:995" ph="&lt;thead.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="676:974" ph="&lt;tr.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1008:1614" ph="&lt;tbody.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1028:1593" ph="@..." />
+            <marker date="1530400364266" expanded="true" signature="1073:1593" ph="{...}" />
+            <marker date="1530400364266" expanded="true" signature="1104:1578" ph="&lt;tr.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1651:2830" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1702:2823" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1754:2812" ph="&lt;table.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1814:2173" ph="&lt;thead.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="1854:2152" ph="&lt;tr.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2186:2795" ph="&lt;tbody.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2206:2774" ph="@..." />
+            <marker date="1530400364266" expanded="true" signature="2254:2774" ph="{...}" />
+            <marker date="1530400364266" expanded="true" signature="2285:2759" ph="&lt;tr.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2833:3993" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2885:3986" ph="&lt;div.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2937:3975" ph="&lt;table.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="2997:3356" ph="&lt;thead.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="3037:3335" ph="&lt;tr.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="3369:3958" ph="&lt;tbody.../&gt;" />
+            <marker date="1530400364266" expanded="true" signature="3389:3937" ph="@..." />
+            <marker date="1530400364266" expanded="true" signature="3438:3937" ph="{...}" />
+            <marker date="1530400364266" expanded="true" signature="3469:3922" ph="&lt;tr.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccessDenied.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <folding>
+            <marker date="1530400487521" expanded="true" signature="42:582" ph="&lt;div.../&gt;" />
+            <marker date="1530400487521" expanded="true" signature="71:575" ph="&lt;div.../&gt;" />
+            <marker date="1530400487521" expanded="true" signature="93:568" ph="&lt;div.../&gt;" />
+            <marker date="1530400487521" expanded="true" signature="143:557" ph="&lt;div.../&gt;" />
+            <marker date="1530400487521" expanded="true" signature="305:542" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccountCreated.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <marker date="1530400496889" expanded="true" signature="32:67" ph="@..." />
+            <marker date="1530400496889" expanded="true" signature="69:778" ph="&lt;div.../&gt;" />
+            <marker date="1530400496889" expanded="true" signature="102:771" ph="&lt;div.../&gt;" />
+            <marker date="1530400496889" expanded="true" signature="128:760" ph="&lt;div.../&gt;" />
+            <marker date="1530400496889" expanded="true" signature="182:745" ph="&lt;div.../&gt;" />
+            <marker date="1530400496889" expanded="true" signature="354:726" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/Services.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <marker date="1530400594965" expanded="true" signature="0:36" ph="@..." />
+            <marker date="1530400594965" expanded="true" signature="38:202" ph="&lt;div.../&gt;" />
+            <marker date="1530400594965" expanded="true" signature="71:195" ph="&lt;div.../&gt;" />
+            <marker date="1530400594965" expanded="true" signature="97:184" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Admin/Layout.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="133" selection-start-line="26" selection-start-column="133" selection-end-line="26" selection-end-column="133" />
+          <folding>
+            <marker date="1530401005742" expanded="true" signature="73:1207" ph="&lt;head.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="255:507" ph="&lt;environment.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="512:1199" ph="&lt;environment.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1583:1767" ph="&lt;ul.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1620:1755" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1780:4385" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1812:4378" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1834:3993" ph="&lt;nav.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1898:3982" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="1935:2094" ph="&lt;h6.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2103:3015" ph="&lt;ul.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2142:2341" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2176:2325" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2352:2477" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2386:2461" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2488:2606" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2522:2590" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2617:2739" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2651:2723" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2750:2868" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2784:2852" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2879:3001" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="2913:2985" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3025:3181" ph="&lt;h6.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3190:3969" ph="&lt;ul.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3234:3413" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3268:3397" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3424:3605" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3458:3589" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3616:3788" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3650:3772" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3799:3955" ph="&lt;li.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3833:3939" ph="&lt;a.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="3999:4369" ph="&lt;main.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4078:4347" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4151:4334" ph="&lt;footer.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4202:4316" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4387:5340" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4514:5333" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4561:5324" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4595:4876" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4719:4863" ph="&lt;button.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="4883:5031" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="5038:5313" ph="&lt;div.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="5345:5683" ph="&lt;environment.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="5684:6828" ph="&lt;environment.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="5729:6052" ph="&lt;script.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="6057:6291" ph="&lt;script.../&gt;" />
+            <marker date="1530401005742" expanded="true" signature="6296:6691" ph="&lt;script.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/AccountNotActive.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <marker date="1530400510338" expanded="true" signature="74:703" ph="&lt;div.../&gt;" />
+            <marker date="1530400510338" expanded="true" signature="107:696" ph="&lt;div.../&gt;" />
+            <marker date="1530400510338" expanded="true" signature="133:685" ph="&lt;div.../&gt;" />
+            <marker date="1530400510338" expanded="true" signature="187:670" ph="&lt;div.../&gt;" />
+            <marker date="1530400510338" expanded="true" signature="359:651" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/FAQs.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <marker date="1530400582323" expanded="true" signature="0:32" ph="@..." />
+            <marker date="1530400582323" expanded="true" signature="34:190" ph="&lt;div.../&gt;" />
+            <marker date="1530400582323" expanded="true" signature="67:183" ph="&lt;div.../&gt;" />
+            <marker date="1530400582323" expanded="true" signature="93:172" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/Blog.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <folding>
+            <marker date="1530400568847" expanded="true" signature="0:42" ph="@..." />
+            <marker date="1530400568847" expanded="true" signature="44:200" ph="&lt;div.../&gt;" />
+            <marker date="1530400568847" expanded="true" signature="77:193" ph="&lt;div.../&gt;" />
+            <marker date="1530400568847" expanded="true" signature="103:182" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Home/Index.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <marker date="1530399559393" expanded="true" signature="0:36" ph="@..." />
+            <marker date="1530399559393" expanded="true" signature="38:643" ph="&lt;header.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="67:633" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="98:624" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="137:613" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="169:600" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="205:576" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="267:559" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="645:1966" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="684:1959" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="711:1321" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="753:1310" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="955:1297" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="1326:1950" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="1355:1939" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="1414:1784" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="1969:2493" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2056:2486" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2078:2477" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2115:2466" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2495:3266" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2536:3259" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="2558:3089" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="3099:3250" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="3268:4544" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="3324:4537" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="3351:3730" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="3735:4132" ph="&lt;div.../&gt;" />
+            <marker date="1530399559393" expanded="true" signature="4137:4528" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Register.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="120" selection-start-line="110" selection-start-column="120" selection-end-line="110" selection-end-column="120" />
+          <folding>
+            <marker date="1530375842722" expanded="true" signature="26:65" ph="@..." />
+            <marker date="1530375842722" expanded="true" signature="477:1117" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="505:800" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="811:1102" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1127:2269" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1155:1698" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1292:1681" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1347:1516" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1710:2254" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1834:2237" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="1889:2060" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="2279:2944" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="2307:2602" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="2614:2929" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="2954:3224" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="3234:4315" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="3262:3733" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="3396:3662" ph="&lt;select.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="3744:4300" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="3885:4222" ph="&lt;select.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="4325:5077" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="4353:4687" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="4699:5062" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="5394:6286" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="5422:5877" ph="&lt;div.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="5540:5808" ph="&lt;select.../&gt;" />
+            <marker date="1530375842722" expanded="true" signature="5889:6271" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Profile.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <marker date="1530400539963" expanded="true" signature="69:5108" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="373:5101" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="404:4028" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="458:4013" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="635:3994" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="679:1185" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="759:951" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="976:1158" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="1319:2301" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="1361:1794" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="1819:2274" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="2322:3971" ph="@..." />
+            <marker date="1530400539963" expanded="true" signature="2341:3971" ph="{...}" />
+            <marker date="1530400539963" expanded="true" signature="2536:3949" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="2582:3192" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="3221:3918" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="4037:5090" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="4091:5075" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5111:6123" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5240:6116" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5291:6105" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5331:5638" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5457:5619" ph="&lt;button.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5651:5804" ph="&lt;div.../&gt;" />
+            <marker date="1530400539963" expanded="true" signature="5817:6090" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Login.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <marker date="1530378933343" expanded="true" signature="23:67" ph="@..." />
+            <marker date="1530378933343" expanded="true" signature="74:2253" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="129:2242" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="283:2230" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="319:2215" ph="&lt;form.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="478:1022" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="614:797" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1041:1578" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1178:1356" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1596:2084" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1645:1932" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1689:1904" ph="&lt;div.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1740:1873" ph="&lt;label.../&gt;" />
+            <marker date="1530378933343" expanded="true" signature="1953:2061" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Views/Account/Edit.cshtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+          <folding>
+            <marker date="1530400521617" expanded="true" signature="545:1234" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="573:893" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="904:1219" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="1272:1836" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="1409:1819" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="1464:1633" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="2444:2737" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="2747:3828" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="2775:3246" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="2909:3175" ph="&lt;select.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="3257:3813" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="3398:3735" ph="&lt;select.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="3838:4652" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="3866:4230" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="4242:4637" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="4662:4959" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="5127:6099" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="5173:6090" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6112:7018" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6239:7011" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6286:7002" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6320:6587" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6430:6574" ph="&lt;button.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6594:6733" ph="&lt;div.../&gt;" />
+            <marker date="1530400521617" expanded="true" signature="6740:6991" ph="&lt;div.../&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="23" column="87" selection-start-line="23" selection-start-column="87" selection-end-line="23" selection-end-column="87" />
+          <folding>
+            <marker date="1530220576494" expanded="false" signature="6:471" ph="..." />
+            <marker date="1530220576494" expanded="true" signature="492:2842" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="519:2840" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="573:961" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="1188:1826" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="2050:2834" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="2211:2326" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="2343:2427" ph="{...}" />
+            <marker date="1530220576494" expanded="true" signature="2528:2702" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SmartTech/wwwroot/uploads/5e6a8663-a4f0-4450-b6b5-c0a2928f5d09/IMG_E9360.JPG">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
