@@ -6,3 +6,5 @@ It uses ASP.NET Core 1.1, EntityFramework 6, MSSQL, LinQ, Jquery, and Bootstrap 
 # Important
 For creating user as admin, a client-side validation is use for providing admin passcode. The default is '62829800'. Please use it to register users
 with admin role. You can change the passcode in the site.js file or create a server-side validation.
+
+All dotnet comands should be written in SmartTech sub folder directory.
